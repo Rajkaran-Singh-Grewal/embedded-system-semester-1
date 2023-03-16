@@ -1,0 +1,44 @@
+|rgrewallab6verilog
+A[0] => fullAdder.IN0
+A[0] => fullAdder.IN0
+A[1] => fullAdder.IN0
+A[1] => fullAdder.IN0
+A[2] => fullAdder.IN0
+A[2] => fullAdder.IN0
+A[3] => halfAdder.IN0
+A[3] => halfAdder.IN0
+B[0] => fullAdder.IN1
+B[0] => fullAdder.IN1
+B[1] => fullAdder.IN1
+B[1] => fullAdder.IN1
+B[2] => fullAdder.IN1
+B[2] => fullAdder.IN1
+B[3] => halfAdder.IN1
+B[3] => halfAdder.IN1
+C => fullAdder.IN1
+C => fullAdder.IN1
+State => Decoder0.IN0
+hex1[0] <= <GND>
+hex1[1] <= <GND>
+hex1[2] <= <GND>
+hex1[3] <= <VCC>
+hex1[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex1[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex1[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex2[0] <= <GND>
+hex2[1] <= <GND>
+hex2[2] <= <GND>
+hex2[3] <= <VCC>
+hex2[4] <= <GND>
+hex2[5] <= <GND>
+hex2[6] <= <GND>
+sum[0] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry[0] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+carry[1] <= carry[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+carry[2] <= carry[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+carry[3] <= carry[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
