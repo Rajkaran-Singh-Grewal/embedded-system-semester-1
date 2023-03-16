@@ -1,0 +1,66 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity rgrewallab6vhdl is
+    port(
+        A: in std_logic_vector(3 downto 0);
+        B: in std_logic_vector(3 downto 0);
+        Cin: in std_logic;
+        State: in std_logic;
+        hex1: out std_logic_vector(6 downto 0);
+        hex2: out std_logic_vector(6 downto 0);
+        sum: out std_logic_vector(3 downto 0);
+        carry: out std_logic_vector(3 downto 0)
+    );
+end rgrewallab6vhdl;
+
+architecture adder of rgrewallab6vhdl is
+    function halfAdder(as: std_logic;bs:std_logic) return std_logic_vector is 
+        variable halfadder: std_logic_vector(1 downto 0);
+        variable s: std_logic;
+        variable c: std_logic;
+        begin
+            s := as XOR bs;
+            c := as AND bs;
+            halfadder(0) := s;
+            halfadder(1) := c;
+            return halfadder;
+    end function;
+    function fullAdder(as: std_logic; bs:std_logic; Carryin: std_logic) return std_logic_vector is
+        variable fulladder: std_logic_vector(1 downto 0);
+        variable s: std_logic;
+        variable c: std_logic;
+        begin
+            s := as XOR bs XOR Carryin;
+            c := (((as XOR bs) AND Carryin) OR (as AND bs));
+            fulladder(0) := s;
+            fulladder(1) := c;
+            return fulladder;
+    end function;
+    signal i: std_logic;
+    signal carryin: std_logic;
+    signal adder: std_logic_vector(1 downto 0);
+    begin
+        process(A,B,C,State) is
+            begin
+                carryin <= Cin;
+                case state is
+                    when '1' =>
+                        Hex1 <= "0111000";
+                        Hex2 <= "0001000";
+                        for i in 0 to 3 loop 
+                            adder <=  fullAdder(A(i),B(i),carryin);
+                            carryin <= adder(1);
+                            sum(i) <= adder(0);
+                        end loop;
+                        carry(0) <= carryin;
+                    when '0' =>
+                        hex1 <= "1001000";
+                        hex2 <= "0001000";
+                        for i in 0 to 3 loop
+                            adder <= halfAdder(A(i),B(i));
+                            sum(i) <= adder(0);
+                            carry(i) <= adder(1);
+                        end loop;
+                end case;
+        end process;
+end adder;
