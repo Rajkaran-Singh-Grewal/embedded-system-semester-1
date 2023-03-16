@@ -1,0 +1,37 @@
+00:55:14 **** Incremental Build of configuration Debug for project rgrewalassignment2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:180:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  180 |   printf("Starting The Program\n");
+      |   ^~~~~~
+../Core/Src/main.c:180:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:187:4: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  187 |    scanf( "%s",&receivePasscode);
+      |    ^~~~~
+../Core/Src/main.c:187:4: warning: incompatible implicit declaration of built-in function 'scanf'
+../Core/Src/main.c:187:4: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:187:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[4]' [-Wformat=]
+  187 |    scanf( "%s",&receivePasscode);
+      |            ~^  ~~~~~~~~~~~~~~~~
+      |             |  |
+      |             |  char (*)[4]
+      |             char *
+arm-none-eabi-gcc -o "rgrewalassignment2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\rajka\OneDrive - Conestoga College\Embedded System\Semester 1\Embedded System\Weeks\Week 6\Assignment 2\rgrewalassignment2\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rgrewalassignment2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rgrewalassignment2.elf
+ 
+arm-none-eabi-size   rgrewalassignment2.elf 
+arm-none-eabi-objdump -h -S  rgrewalassignment2.elf  > "rgrewalassignment2.list"
+   text	   data	    bss	    dec	    hex	filename
+  25680	    120	   1800	  27600	   6bd0	rgrewalassignment2.elf
+Finished building: default.size.stdout
+ 
+Finished building: rgrewalassignment2.list
+ 
+
+00:55:16 Build Finished. 0 errors, 5 warnings. (took 1s.838ms)
+
