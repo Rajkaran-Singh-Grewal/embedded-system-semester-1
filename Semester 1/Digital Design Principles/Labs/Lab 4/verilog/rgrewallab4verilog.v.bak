@@ -1,0 +1,3 @@
+module rgrewallab4verilog(input a,output b);
+
+endmodule
