@@ -1,0 +1,22 @@
+|rgrewallab5vhdl
+A[0] => C[7].IN0
+A[0] => C[6].IN0
+A[1] => C[5].IN0
+A[1] => C[4].IN0
+A[2] => C[3].IN0
+A[2] => C[2].IN0
+A[3] => C[1].IN0
+A[3] => C[0].IN0
+B[0] => C[6].IN1
+B[0] => C[7].IN1
+B[1] => C[4].IN1
+B[1] => C[5].IN1
+B[2] => C[2].IN1
+B[2] => C[3].IN1
+B[3] => C[0].IN1
+B[3] => C[1].IN1
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= E.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= LED.DB_MAX_OUTPUT_PORT_TYPE
+
+
