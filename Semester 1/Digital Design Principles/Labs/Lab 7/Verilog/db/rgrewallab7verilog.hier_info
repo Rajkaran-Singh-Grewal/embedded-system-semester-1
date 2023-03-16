@@ -1,0 +1,14 @@
+|rgrewallab7verilog
+Sw[0] => Decoder0.IN3
+Sw[1] => Decoder0.IN2
+Sw[2] => Decoder0.IN1
+Sw[3] => Decoder0.IN0
+led[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
