@@ -1,0 +1,4 @@
+﻿  rgrewalassignment4.cpp
+C:\Embedded Systems\Semester 1\Embedded Systems\Weeks\Week 1\rgrewalassignment4\rgrewalassignment4\rgrewalassignment4.cpp(9,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Embedded Systems\Semester 1\Embedded Systems\Weeks\Week 1\rgrewalassignment4\rgrewalassignment4\rgrewalassignment4.cpp(13,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  rgrewalassignment4.vcxproj -> C:\Embedded Systems\Semester 1\Embedded Systems\Weeks\Week 1\rgrewalassignment4\x64\Debug\rgrewalassignment4.exe

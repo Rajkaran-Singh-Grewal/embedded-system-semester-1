@@ -1,0 +1,1426 @@
+2023-03-18 12:47:43,865 [INFO] Activator:179 - 
+
+
+2023-03-18 12:47:43,865 [INFO] Activator:180 - !SESSION log4j initialized
+2023-03-18 12:47:51,785 [INFO] McuFinderGlobals:52 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-03-18 12:47:52,505 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-18 12:47:52,565 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-03-18 12:47:52,565 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-03-18 12:47:52,575 [WARN] ApiDb:258 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-03-18 12:47:52,595 [INFO] ApiDb:249 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:52,605 [INFO] DbMcusAds:124 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:52,605 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-03-18 12:47:52,815 [INFO] RulesReader:61 - Compatibility file has been processed (283 Rules)
+2023-03-18 12:47:52,955 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-03-18 12:47:52,955 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-03-18 12:47:52,955 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-03-18 12:47:52,955 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:52,965 [INFO] ApiDb:249 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:52,965 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:52,965 [INFO] DbMcusAds:124 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:52,965 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:52,965 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:52,965 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-03-18 12:47:53,095 [INFO] MainPanel:252 - HeapMemory: 268435456
+2023-03-18 12:47:53,255 [INFO] DbMcusXml:77 - Set database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/mcu/
+2023-03-18 12:47:53,255 [INFO] ApiDb:273 - Set plugin database path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/boardmanager/
+2023-03-18 12:47:53,255 [INFO] ApiDb:260 - Set plugin images path to: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\/plugins/mcufinder/images/
+2023-03-18 12:47:53,255 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:53,255 [INFO] ApiDb:249 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:53,255 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:53,255 [INFO] DbMcusAds:124 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/
+2023-03-18 12:47:53,255 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:53,255 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:47:53,255 [INFO] CrossReferenceDbSqlite:202 - Set database path to: C:\Users\rajka\.stmcufinder\plugins\mcufinder//mcu/cs/
+2023-03-18 12:47:53,285 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-18 12:47:53,285 [INFO] PluginManage:193 - Search for loadable plugins [exclusion list=, ]
+2023-03-18 12:47:53,285 [INFO] PluginManage:307 - Check plugin analytics
+2023-03-18 12:47:53,554 [INFO] AnalyticsPlugin:262 - Accepted Software Licenses: 
+2023-03-18 12:47:53,564 [INFO] AnalyticsPlugin:264 - Accepted CMSIS Pack Licenses: 
+2023-03-18 12:47:53,564 [INFO] AnalyticsPlugin:266 - Accepted Firmware Licenses: 
+2023-03-18 12:47:53,574 [INFO] PluginManage:356 - Loaded plugin analytics (category:tool,tabindex:-1)
+2023-03-18 12:47:53,574 [INFO] PluginManage:307 - Check plugin cadmodel
+2023-03-18 12:47:53,594 [INFO] CADModel:104 - Init CAD model plugin
+2023-03-18 12:47:53,594 [INFO] PluginManage:356 - Loaded plugin cadmodel (category:power,tabindex:5)
+2023-03-18 12:47:53,594 [INFO] PluginManage:307 - Check plugin clock
+2023-03-18 12:47:53,634 [INFO] PluginManage:356 - Loaded plugin clock (category:base,tabindex:2)
+2023-03-18 12:47:53,634 [INFO] PluginManage:307 - Check plugin ddr
+2023-03-18 12:47:53,634 [INFO] PluginManage:356 - Loaded plugin ddr (category:tool,tabindex:6)
+2023-03-18 12:47:53,634 [INFO] PluginManage:307 - Check plugin filemanager
+2023-03-18 12:47:53,904 [INFO] PluginManage:356 - Loaded plugin filemanager (category:base,tabindex:10)
+2023-03-18 12:47:53,904 [INFO] PluginManage:307 - Check plugin ipmanager
+2023-03-18 12:47:53,934 [INFO] PluginManage:356 - Loaded plugin ipmanager (category:base,tabindex:5)
+2023-03-18 12:47:53,934 [INFO] PluginManage:307 - Check plugin lpbam
+2023-03-18 12:47:53,984 [INFO] PluginManage:356 - Loaded plugin lpbam (category:base,tabindex:0)
+2023-03-18 12:47:53,984 [INFO] PluginManage:307 - Check plugin pinoutandconfiguration
+2023-03-18 12:47:54,024 [INFO] PluginManage:356 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2023-03-18 12:47:54,024 [INFO] PluginManage:307 - Check plugin pinoutconfig
+2023-03-18 12:47:54,084 [INFO] PluginManage:356 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2023-03-18 12:47:54,084 [INFO] PluginManage:307 - Check plugin power
+2023-03-18 12:47:54,114 [INFO] PluginManage:356 - Loaded plugin power (category:power,tabindex:4)
+2023-03-18 12:47:54,114 [INFO] PluginManage:307 - Check plugin projectmanager
+2023-03-18 12:47:54,144 [INFO] PluginManage:356 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2023-03-18 12:47:54,144 [INFO] PluginManage:307 - Check plugin thirdparty
+2023-03-18 12:47:54,484 [WARN] IntegrityCheckThread:82 - waiting for thirdparty lock release [integrity check]
+2023-03-18 12:47:54,484 [INFO] PluginManage:356 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2023-03-18 12:47:54,484 [INFO] IntegrityCheckThread:84 - entering critical section [integrity check]
+2023-03-18 12:47:54,484 [INFO] PluginManage:307 - Check plugin tools
+2023-03-18 12:47:54,494 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2023-03-18 12:47:54,524 [INFO] PluginManage:356 - Loaded plugin tools (category:base,tabindex:7)
+2023-03-18 12:47:54,524 [INFO] PluginManage:307 - Check plugin tutovideos
+2023-03-18 12:47:54,864 [INFO] PluginManage:356 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2023-03-18 12:47:54,864 [INFO] PluginManage:307 - Check plugin updater
+2023-03-18 12:47:54,884 [INFO] PluginManage:356 - Loaded plugin updater (category:base,tabindex:12)
+2023-03-18 12:47:54,884 [INFO] PluginManage:280 - PluginManage : Loaded plugins [15]
+2023-03-18 12:47:55,304 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-18 12:47:55,415 [INFO] CADModel:164 - CPN selected for project level
+2023-03-18 12:47:55,415 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-18 12:47:55,447 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,447 [INFO] PluginManager:219 - loadIPPluginJar : add adc
+2023-03-18 12:47:55,498 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,498 [INFO] PluginManager:219 - loadIPPluginJar : add aes
+2023-03-18 12:47:55,538 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,538 [INFO] PluginManager:219 - loadIPPluginJar : add can
+2023-03-18 12:47:55,568 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,568 [INFO] PluginManager:219 - loadIPPluginJar : add comp
+2023-03-18 12:47:55,608 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,608 [INFO] PluginManager:219 - loadIPPluginJar : add cryp
+2023-03-18 12:47:55,639 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,639 [INFO] PluginManager:219 - loadIPPluginJar : add dfsdm
+2023-03-18 12:47:55,657 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,657 [INFO] PluginManager:219 - loadIPPluginJar : add dma
+2023-03-18 12:47:55,697 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,697 [INFO] PluginManager:219 - loadIPPluginJar : add dma3
+2023-03-18 12:47:55,717 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,717 [INFO] PluginManager:219 - loadIPPluginJar : add fatfs
+2023-03-18 12:47:55,767 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,767 [INFO] PluginManager:219 - loadIPPluginJar : add fmc
+2023-03-18 12:47:55,787 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,787 [INFO] PluginManager:219 - loadIPPluginJar : add freertos
+2023-03-18 12:47:55,807 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,807 [INFO] PluginManager:219 - loadIPPluginJar : add genericplugin
+2023-03-18 12:47:55,897 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:55,897 [INFO] PluginManager:219 - loadIPPluginJar : add gfxmmu
+2023-03-18 12:47:56,027 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,027 [INFO] PluginManager:219 - loadIPPluginJar : add gic
+2023-03-18 12:47:56,047 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,047 [INFO] PluginManager:219 - loadIPPluginJar : add gpio
+2023-03-18 12:47:56,127 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,127 [INFO] PluginManager:219 - loadIPPluginJar : add gtzc
+2023-03-18 12:47:56,156 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,156 [INFO] PluginManager:219 - loadIPPluginJar : add hash
+2023-03-18 12:47:56,216 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,216 [INFO] PluginManager:219 - loadIPPluginJar : add i2c
+2023-03-18 12:47:56,256 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,256 [INFO] PluginManager:219 - loadIPPluginJar : add i2s
+2023-03-18 12:47:56,366 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,366 [INFO] PluginManager:219 - loadIPPluginJar : add ipddr
+2023-03-18 12:47:56,466 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,466 [INFO] PluginManager:219 - loadIPPluginJar : add linkedlist
+2023-03-18 12:47:56,506 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,506 [INFO] PluginManager:219 - loadIPPluginJar : add lorawan
+2023-03-18 12:47:56,536 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,536 [INFO] PluginManager:219 - loadIPPluginJar : add ltdc
+2023-03-18 12:47:56,556 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,556 [INFO] PluginManager:219 - loadIPPluginJar : add mdma
+2023-03-18 12:47:56,566 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,566 [INFO] PluginManager:219 - loadIPPluginJar : add nvic
+2023-03-18 12:47:56,606 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,606 [INFO] PluginManager:219 - loadIPPluginJar : add opamp
+2023-03-18 12:47:56,666 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,666 [INFO] PluginManager:219 - loadIPPluginJar : add openamp
+2023-03-18 12:47:56,706 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,706 [INFO] PluginManager:219 - loadIPPluginJar : add pdm2pcm
+2023-03-18 12:47:56,726 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,726 [INFO] PluginManager:219 - loadIPPluginJar : add plateformsettings
+2023-03-18 12:47:56,756 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,756 [INFO] PluginManager:219 - loadIPPluginJar : add quadspi
+2023-03-18 12:47:56,766 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,766 [INFO] PluginManager:219 - loadIPPluginJar : add resmgrutility
+2023-03-18 12:47:56,816 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,816 [INFO] PluginManager:219 - loadIPPluginJar : add sai
+2023-03-18 12:47:56,856 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,856 [INFO] PluginManager:219 - loadIPPluginJar : add spi
+2023-03-18 12:47:56,916 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,916 [INFO] PluginManager:219 - loadIPPluginJar : add stm32_wpan
+2023-03-18 12:47:56,936 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:56,936 [INFO] PluginManager:219 - loadIPPluginJar : add tim
+2023-03-18 12:47:57,026 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,026 [INFO] PluginManager:219 - loadIPPluginJar : add touchsensing
+2023-03-18 12:47:57,056 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,056 [INFO] PluginManager:219 - loadIPPluginJar : add tracer_emb
+2023-03-18 12:47:57,076 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,076 [INFO] PluginManager:219 - loadIPPluginJar : add ts
+2023-03-18 12:47:57,096 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,096 [INFO] PluginManager:219 - loadIPPluginJar : add tsc
+2023-03-18 12:47:57,116 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,116 [INFO] PluginManager:219 - loadIPPluginJar : add ucpd
+2023-03-18 12:47:57,166 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,166 [INFO] PluginManager:219 - loadIPPluginJar : add usart
+2023-03-18 12:47:57,206 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:47:57,206 [INFO] PluginManager:219 - loadIPPluginJar : add usbx
+2023-03-18 12:47:57,385 [INFO] CADModel:164 - CPN selected for project level
+2023-03-18 12:47:57,385 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-18 12:47:57,385 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:57,385 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-03-18 12:47:57,495 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2023-03-18 12:47:57,635 [INFO] CADModel:164 - CPN selected for project level
+2023-03-18 12:47:57,635 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-18 12:47:57,635 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:57,635 [ERROR] CADModel:124 - Updater not yet initialized, retry later 
+2023-03-18 12:47:57,635 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:57,825 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:57,835 [INFO] DbMcusAds:52 - JSON generation date=Wed Jan 18 09:17:18 EST 2023 (1674051438939)
+2023-03-18 12:47:57,835 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:57,925 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-03-18 12:47:58,095 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:58,105 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:58,105 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:58,105 [WARN] DetailPanel:344 - Failed to get advertising image, set to default
+2023-03-18 12:47:58,105 [FATAL] Updater:308 - Updater called before beeing initialized
+2023-03-18 12:47:58,205 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2023-03-18 12:47:58,225 [INFO] Updater:1056 - Updater Version found : 6.7.0
+2023-03-18 12:47:58,245 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839
+2023-03-18 12:47:58,684 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-18 12:47:58,684 [INFO] MainUpdater:3494 - Updater definition file requires update
+2023-03-18 12:47:58,684 [INFO] MainUpdater:282 - Updater Check For Update Now.
+2023-03-18 12:47:58,684 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-03-18 12:47:58,754 [INFO] ServerAccessManage:474 - Download File updaters.zip
+2023-03-18 12:47:58,874 [INFO] FileExtend:239 - Unzip File : updaters.zip
+2023-03-18 12:47:58,874 [INFO] FileExtend:254 - Standard Zip Deflate
+2023-03-18 12:47:59,451 [INFO] ServerAccessManage:474 - Download File PacksControlFlags.xml
+2023-03-18 12:47:59,580 [INFO] ServerAccessManage:474 - Download File cubemx.pidx
+2023-03-18 12:48:00,498 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:00,498 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [1/15]
+2023-03-18 12:48:00,546 [INFO] ServerAccessManage:474 - Download File STMicroelectronics.X-CUBE-AI.pdsc
+2023-03-18 12:48:03,498 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:03,498 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [2/15]
+2023-03-18 12:48:04,104 [INFO] ServerAccessManage:474 - Download File STMicroelectronics.X-CUBE-BLEMGR.pdsc
+2023-03-18 12:48:05,455 [INFO] ServerAccessManage:474 - Download File STMicroelectronics.X-CUBE-FREERTOS.pdsc
+2023-03-18 12:48:06,504 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:06,504 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [3/15]
+2023-03-18 12:48:07,154 [INFO] ServerAccessManage:474 - Download File WES.I-CUBE-Cesium.pdsc
+2023-03-18 12:48:08,576 [ERROR] ServerAccessManage:1090 - Problem, file not found on Server
+2023-03-18 12:48:09,126 [ERROR] ServerAccessManage:1090 - Problem, file not found on Server
+2023-03-18 12:48:09,306 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.0
+2023-03-18 12:48:09,326 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.2.0.0
+2023-03-18 12:48:09,366 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.0
+2023-03-18 12:48:09,386 [WARN] PackLoader:242 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2023-03-18 12:48:09,386 [INFO] PopulateThirdPartyThread:64 - Ending populate Thread
+2023-03-18 12:48:09,386 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2023-03-18 12:48:09,396 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.0
+2023-03-18 12:48:09,396 [INFO] ThirdParty:999 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-03-18 12:48:09,396 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-03-18 12:48:09,396 [INFO] LoadServerUpdatesThread:367 - End of LoadServerUpdate Thread
+2023-03-18 12:48:09,464 [INFO] CheckServerUpdateThread:119 - End of CheckServer Thread
+2023-03-18 12:48:09,484 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-18 12:48:09,504 [INFO] McuFinderGlobals:65 - Set McuFinderConnectedMode to true
+2023-03-18 12:48:09,514 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:09,514 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [4/15]
+2023-03-18 12:48:09,704 [INFO] ServerAccessManage:474 - Download File mcusAds.json._tmp_
+2023-03-18 12:48:09,806 [INFO] LoadUrlFilesThread:150 - End of LoadUrlFiles Thread
+2023-03-18 12:48:10,647 [INFO] ServerAccessManage:474 - Download File cube-finder-db.zip
+2023-03-18 12:48:11,241 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-03-18 12:48:11,241 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-03-18 12:48:11,241 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-03-18 12:48:12,523 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:12,523 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [5/15]
+2023-03-18 12:48:15,526 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:15,526 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [6/15]
+2023-03-18 12:48:18,072 [INFO] FileExtend:239 - Unzip File : cube-finder-db.zip
+2023-03-18 12:48:18,072 [INFO] FileExtend:254 - Standard Zip Deflate
+2023-03-18 12:48:18,532 [WARN] MainUpdater:1186 - Updater busy. Cannot search thirdparties
+2023-03-18 12:48:18,532 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [7/15]
+2023-03-18 12:48:19,251 [INFO] LoadUrlFilesThread:150 - End of LoadUrlFiles Thread
+2023-03-18 12:48:20,041 [INFO] ServerAccessManage:474 - Download File crdb.zip
+2023-03-18 12:48:20,770 [INFO] FileExtend:239 - Unzip File : crdb.zip
+2023-03-18 12:48:20,770 [INFO] FileExtend:254 - Standard Zip Deflate
+2023-03-18 12:48:20,921 [INFO] LoadUrlFilesThread:150 - End of LoadUrlFiles Thread
+2023-03-18 12:48:21,042 [INFO] ServerAccessManage:474 - Download File tutoVideoDB.zip
+2023-03-18 12:48:21,062 [INFO] FileExtend:239 - Unzip File : tutoVideoDB.zip
+2023-03-18 12:48:21,062 [INFO] FileExtend:254 - Standard Zip Deflate
+2023-03-18 12:48:21,242 [INFO] LoadUrlFilesThread:150 - End of LoadUrlFiles Thread
+2023-03-18 12:48:21,268 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-03-18 12:48:21,887 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2023-03-18 12:48:21,977 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2023-03-18 12:48:22,127 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2023-03-18 12:48:22,187 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.2.4
+2023-03-18 12:48:22,227 [WARN] PackLoader:242 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.1.3
+2023-03-18 12:48:22,237 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.2.0.0
+2023-03-18 12:48:22,317 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2023-03-18 12:48:22,387 [WARN] PackLoader:242 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.5.4
+2023-03-18 12:48:22,497 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.0
+2023-03-18 12:48:22,527 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.1.0
+2023-03-18 12:48:22,537 [WARN] PackLoader:242 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2023-03-18 12:48:22,667 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2023-03-18 12:48:22,777 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2023-03-18 12:48:22,807 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.2.0
+2023-03-18 12:48:22,947 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.0.0
+2023-03-18 12:48:22,987 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.1.1.0
+2023-03-18 12:48:23,027 [WARN] PackLoader:242 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2023-03-18 12:48:23,037 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.0.0
+2023-03-18 12:48:23,047 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.0.0
+2023-03-18 12:48:23,107 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.21.1
+2023-03-18 12:48:23,246 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.4.0
+2023-03-18 12:48:23,546 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.7.3.0
+2023-03-18 12:48:23,566 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2023-03-18 12:48:23,606 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.1.1.0
+2023-03-18 12:48:23,686 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2023-03-18 12:48:23,736 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2023-03-18 12:48:23,766 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2023-03-18 12:48:23,776 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.1.1.1
+2023-03-18 12:48:23,796 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.1.3.0
+2023-03-18 12:48:23,846 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.1.0.0
+2023-03-18 12:48:23,856 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2023-03-18 12:48:23,906 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.1.0.0
+2023-03-18 12:48:23,936 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.1.0.0
+2023-03-18 12:48:23,956 [WARN] PackLoader:242 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2023-03-18 12:48:23,976 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2023-03-18 12:48:24,076 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.9.5.0
+2023-03-18 12:48:24,356 [WARN] PackLoader:242 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.1.1.0
+2023-03-18 12:48:24,436 [WARN] PackLoader:242 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2023-03-18 12:48:24,506 [INFO] ThirdParty:947 - Integrity check success = true
+2023-03-18 12:48:24,506 [INFO] IntegrityCheckThread:98 - exiting critical section [integrity check]
+2023-03-18 12:48:24,506 [INFO] IntegrityCheckThread:101 - End integrity checks thread
+2023-03-18 12:48:28,390 [WARN] DbFile:40 - Overriding database path with different value: C:\Users\rajka\.stmcufinder\plugins\mcufinder/ => C:\Users\rajka\.stmcufinder\plugins\mcufinder
+2023-03-18 12:48:29,079 [INFO] ServerAccessManage:474 - Download File api_config.json
+2023-03-18 12:48:29,229 [INFO] LoadUrlFilesThread:150 - End of LoadUrlFiles Thread
+2023-03-18 12:48:29,229 [INFO] DbMcusAds:52 - JSON generation date=Tue Mar 07 03:50:55 EST 2023 (1678179055114)
+2023-03-18 12:48:29,639 [INFO] ServerAccessManage:474 - Download File 
+2023-03-18 12:48:29,649 [INFO] LoadUrlFilesThread:179 - End of LoadServerUrlFiles without Thread
+2023-03-18 12:48:29,649 [INFO] TargetSelectorAdapter:258 - Refresh data is successful
+2023-03-18 12:48:29,850 [INFO] ApiDb:580 - Connected to CubeFinder SQLite database (C:\Users\rajka\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2023-03-18 12:48:30,013 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2023-03-18 12:48:30,013 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.35
+2023-03-18 12:48:30,013 [INFO] ApiDb:669 - CubeFinder database generation date=2023-03-10 (1678456172)
+2023-03-18 12:48:30,013 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V1.1.1, STM32Cube_FW_C0_V1.0.1, STM32Cube_FW_F0_V1.11.4, STM32Cube_FW_F3_V1.11.4, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.0.0, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.2.0, STM32Cube_FW_WBA_V1.0.0, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.0.0RC3, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V3.0.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V1.1.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.4, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V1.3.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.5.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0]
+2023-03-18 12:48:34,393 [INFO] ApiDb:239 - Found 143 in-development CPN: [B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L476VGY6PTR, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q, STM32WB1MMCH6, STM32WL5MOCH6TR]
+2023-03-18 12:48:34,403 [INFO] DbMcus:215 - Found 3680 MCUs, 3680 are supported
+2023-03-18 12:48:34,413 [INFO] ApiDb:422 - Load user favorites file C:\Users\rajka/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-03-18 12:48:34,413 [INFO] ApiDb:426 - User favorites MCUs=[]
+2023-03-18 12:48:34,413 [INFO] DbMcus:221 - Set 0 / 0 favorites MCUs
+2023-03-18 12:48:35,129 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2023-03-18 12:48:35,129 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.35
+2023-03-18 12:48:35,129 [INFO] ApiDb:669 - CubeFinder database generation date=2023-03-10 (1678456172)
+2023-03-18 12:48:35,129 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V1.1.1, STM32Cube_FW_C0_V1.0.1, STM32Cube_FW_F0_V1.11.4, STM32Cube_FW_F3_V1.11.4, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.0.0, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.2.0, STM32Cube_FW_WBA_V1.0.0, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.0.0RC3, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V3.0.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V1.1.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.4, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V1.3.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.5.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0]
+2023-03-18 12:48:35,260 [INFO] DbBoardsSqlite:225 - include board P-NUCLEO-WB55-NUCLEO as a kit item of type 'Nucleo-64'
+2023-03-18 12:48:35,260 [INFO] DbBoardsSqlite:225 - include board P-NUCLEO-WB55-USBDONGLE as a kit item of type 'Nucleo USB Dongle'
+2023-03-18 12:48:35,260 [INFO] DbBoardsSqlite:225 - include board STEVAL-IDP005V1 as a kit item of type 'Evaluation Board'
+2023-03-18 12:48:35,260 [INFO] DbBoardsSqlite:225 - include board STEVAL-IDP005V2 as a kit item of type 'Evaluation Board'
+2023-03-18 12:48:35,381 [INFO] ApiDb:239 - Found 143 in-development CPN: [B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, STEVAL-PROTEUS1, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32L476VGY6PTR, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U595ZJT6Q, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U5A5ZJT6Q, STM32U5A9BJY6QTR, STM32U5A9NJH6Q, STM32WB1MMCH6, STM32WL5MOCH6TR]
+2023-03-18 12:48:35,663 [INFO] BoardInfo:879 - No configuration file found for board P-NUCLEO-WB55
+2023-03-18 12:48:35,663 [INFO] DbBoards:156 - Kit is not supported: P-NUCLEO-WB55
+2023-03-18 12:48:35,673 [INFO] BoardInfo:879 - No configuration file found for board STEVAL-BFA001V1B
+2023-03-18 12:48:35,673 [INFO] DbBoards:156 - Kit is not supported: STEVAL-BFA001V1B
+2023-03-18 12:48:35,683 [INFO] BoardInfo:879 - No configuration file found for board STEVAL-BFA001V2B
+2023-03-18 12:48:35,683 [INFO] DbBoards:156 - Kit is not supported: STEVAL-BFA001V2B
+2023-03-18 12:48:36,006 [INFO] DbBoards:160 - Found 179 boards, 176 are supported
+2023-03-18 12:48:36,016 [INFO] ApiDb:422 - Load user favorites file C:\Users\rajka/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-03-18 12:48:36,016 [INFO] ApiDb:426 - User favorites Boards=[]
+2023-03-18 12:48:36,016 [INFO] DbBoards:189 - Set 0 / 0 favorites Boards
+2023-03-18 12:48:36,016 [INFO] ApiDb:667 - CubeFinder database Data Model version=2.1
+2023-03-18 12:48:36,016 [INFO] ApiDb:668 - CubeFinder database Configuration version=3.0.35
+2023-03-18 12:48:36,016 [INFO] ApiDb:669 - CubeFinder database generation date=2023-03-10 (1678456172)
+2023-03-18 12:48:36,016 [INFO] ApiDb:670 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V1.1.1, STM32Cube_FW_C0_V1.0.1, STM32Cube_FW_F0_V1.11.4, STM32Cube_FW_F3_V1.11.4, STM32Cube_FW_F4_V1.27.1, STM32Cube_FW_F7_V1.17.0, STM32Cube_FW_G0_V1.6.1, STM32Cube_FW_G4_V1.5.1, STM32Cube_FW_H5_V0.5.1, STM32Cube_FW_H5_V1.0.0, STM32Cube_FW_H7_V1.11.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.0, STM32Cube_FW_U5_V1.2.0, STM32Cube_FW_WBA_V1.0.0, STM32Cube_FW_WBA_V1.0.0RC1, STM32Cube_FW_WBA_V1.0.0RC3, STM32Cube_FW_WB_V1.15.0RC1, STM32Cube_FW_WB_V1.16.0, STM32Cube_FW_WB_V1.16.0RC2, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.3.0, X-CUBE-ALS_V1.0.1, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V1.0.0, X-CUBE-AZRTOS-H7_V3.0.0, X-CUBE-AZRTOS-L4_V1.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V1.1.0, X-CUBE-AZRTOS-WL_V1.0.0, X-CUBE-BLE1_V6.2.4, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V1.3.0, X-CUBE-EEPRMA1_V4.1.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V9.1.0, X-CUBE-MEMS1_V9.4.0, X-CUBE-MEMS1_V9.5.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0]
+2023-03-18 12:48:37,968 [INFO] DbExamplesSqlite:375 - Ignored 46 examples not supported by CubeIDE
+2023-03-18 12:48:37,970 [INFO] DbExamplesSqlite:376 - Found 7328 examples active
+2023-03-18 12:48:37,970 [INFO] DbExamplesSqlite:377 - Found 1095 examples obsolete
+2023-03-18 12:48:37,970 [INFO] DbExamplesSqlite:378 - Found 0 examples under development
+2023-03-18 12:48:37,970 [INFO] DbExamplesSqlite:379 - Found 77 examples not building
+2023-03-18 12:48:37,970 [INFO] DbExamples:124 - Found 7359 examples
+2023-03-18 12:48:38,121 [ERROR] DbExamples:207 - Found 498 examples with invalid data (board or MCU)
+2023-03-18 12:48:38,121 [INFO] DbExamples:221 - Found 85 boards with related examples
+2023-03-18 12:48:38,121 [INFO] DbExamples:234 - Found 76 MCUs with related examples
+2023-03-18 12:48:38,171 [INFO] ApiDb:413 - User favorites file not found: C:\Users\rajka/.stm32cubeide/favorites.examples.txt
+2023-03-18 12:48:38,171 [INFO] DbExamples:249 - Set 0 / 0 favorites Examples
+2023-03-18 12:48:39,239 [INFO] McuFinderGlobals:65 - Set McuFinderConnectedMode to true
+2023-03-18 12:48:39,249 [INFO] MultiScanPanel:196 - Auto-refresh data requested => check proxy status ongoing
+2023-03-18 12:48:39,259 [INFO] FinderPluginLoader:92 - Searching for filters in installed packs
+2023-03-18 12:48:42,904 [INFO] LoadUrlFilesThread:179 - End of LoadServerUrlFiles without Thread
+2023-03-18 12:48:42,925 [INFO] DetailPanel:339 - Set advertising image to C:/Users/rajka/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-18 12:49:52,860 [INFO] MultiScanPanel:196 - Auto-refresh data requested => check proxy status ongoing
+2023-03-18 12:49:53,070 [INFO] LoadUrlFilesThread:179 - End of LoadServerUrlFiles without Thread
+2023-03-18 12:49:53,070 [INFO] DetailPanel:339 - Set advertising image to C:/Users/rajka/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-18 12:49:53,090 [INFO] DbBoards:633 - Loading board mini-images...
+2023-03-18 12:49:56,505 [INFO] DbBoards:656 - Loaded 179 board mini-images
+2023-03-18 12:51:00,005 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-18 12:51:00,005 [INFO] MainUpdater:2800 - connection check result : 10
+2023-03-18 12:51:00,097 [INFO] MicroXplorer:451 - Change Database Path : 
+2023-03-18 12:51:00,101 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.70
+2023-03-18 12:51:00,101 [WARN] ThirdParty:845 - waiting for thirdparty lock release [close project]
+2023-03-18 12:51:00,101 [INFO] ThirdParty:847 - entering critical section [close project]
+2023-03-18 12:51:00,117 [INFO] ThirdParty:857 - exiting critical section [close project]
+2023-03-18 12:51:00,133 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-18 12:51:00,173 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 662958616 Bytes (684720128)
+2023-03-18 12:51:00,181 [INFO] OpenFileManager:307 - Change cursor
+2023-03-18 12:51:00,328 [INFO] ProjectFactory:399 - No CPN specified for board NUCLEO-L432KC => set CPN to STM32L432KCU3
+2023-03-18 12:51:00,328 [INFO] Mcu:1925 - Initializing MCU STM32L432K(B-C)Ux STM32L432KCUx STM32L432KCU3
+2023-03-18 12:51:03,560 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2023-03-18 12:51:04,684 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Secured memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Secured memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Not Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,688 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB1 is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB2 is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB3 is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule 117617 - U5Cobra4M][GTZC] default value MPCBB3 and MPCBB5 - Privileged memory - MPCBB4 is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule Rename SubGHz_Phy SUBGHZ_APPLICATION SUBGHZ_PINGPONG to SUBGHZ_ADV_APPLICATION is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule Rename Enabled to IBEACON is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for project manager is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for context M33S is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance value for IP GTZC is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for mcu.IP is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for VP is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for signal is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for mcu.Pin is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for VP is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for signal is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for mcu is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for mcu.Pin is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance value for IP GTZC is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for project manager is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for context M33S is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for VP is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule GTZC_S instance for signal is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule SPDIFRX instance for mcu is applicable
+2023-03-18 12:51:04,696 [INFO] Rule:225 - rule Rename Tracer Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SPDIFRX instance value for IP SPDIFRX is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SPDIFRX instance for signal is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SPDIFRX instance for project manager is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SPDIFRX instance for project manager is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule ADC Scan  fix with FW F7 is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule ADC Scan  fix with FW F7 is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM instance value for IP DFSDM is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM instance for mcu is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM instance for VP is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM instance for signal is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM instance for shared is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule BreakInputSource parameter for IP Timer is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Sourcebreak parameter for IP Timer is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Sourcebreak parameter for IP Timer is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule DFSDM for PCC is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Serial_Wire Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule JTAG_4_pins Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule JTAG_5_pins Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Asynchronous_SW Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_1bit_JTAG Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_2bits_JTAG Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_4bits_JTAG Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_1bit_SW Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_2bits_SW Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Trace_Synchro_4bits_SW Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp0 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp0 Mode for STM32F446 is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp1 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp1 Mode for STM32F446 is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp2 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp3 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp4 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp5 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp6 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule SYS_WakeUp7 Mode is applicable
+2023-03-18 12:51:04,700 [INFO] Rule:225 - rule Mode_PVD_Ext is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Mode_PVD_Int is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Add RTC Activate Clock Source is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Add RTC Activate Calendar 1 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Add RTC Activate Calendar 2 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Add RTC Activate Calendar 3 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART TX Mode is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART RX Mode is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART RX TX Mode is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART PARITY NONE is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART PARITY EVEN is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART PARITY ODD is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule USART StopBits 1 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule USART StopBits 2 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule USART StopBits 1.5 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule USART StopBits 0.5 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART WORD LENGTH 7 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART WORD LENGTH 8 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule UART/USART WORD LENGTH 9 is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Rename FMC NAND NCE signal is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Rename FMC NAND INT signal is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for LSE Drive Capability for WB family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC Clock Prescaler G0 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv L4 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv L4 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv F3 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv F3 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv Goldfish serie is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv Goldfish serie is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv L0 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv F0 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConvn L1 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv L1 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv F1 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv F1 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv F7 family is applicable
+2023-03-18 12:51:04,704 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv F7 family is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigConv F4 and F2 family is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Change Default Value for ADC ExternalTrigInjecConv F4 and F2 family is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0  is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0  is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0 is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0 is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0  is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule ADC SamplingTime fix with FW L0 is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename USB_OE Signal is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename Activate_OE Mode is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PC14/OSC32_IN -> PC14-OSC32_IN (PC14) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PC15/OSC32_OUT -> PC15-OSC32_OUT (PC15) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PH0/OSC_IN -> PH0-OSC_IN (PH0) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PH1/OSC_OUT -> PH1-OSC_OUT (PH1) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE415 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE415 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PA15 -> PA15 (JTDI) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462 pin PB3 -> PB3 (JTD0/TRACESWO) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE415 pin PB3 -> PB3 (JTD0-TRACESWO) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462/DIE415 pin PB4 -> PB4 (NJTRST) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DIE462 pin PH3/BOOT0 -> PH3-BOOT0 (BOOT0) is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename CRYP DataEncryptionTypesList to Algorithm is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename AES DataEncryptionTypesList to Algorithm is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename TDESECB to CRYP_TDES_ECB is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename TDESCBC to CRYP_TDES_CBC is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DESECB to CRYP_DES_ECB is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename DESCBC to CRYP_DES_CBC is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename AESECB to CRYP_AES_ECB is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename AESCBC to CRYP_AES_CBC is applicable
+2023-03-18 12:51:04,708 [INFO] Rule:225 - rule Rename AESCTR to CRYP_AES_CTR is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename AESGCM to CRYP_AES_GCM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename AESCCM to CRYP_AES_CCM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN TimeSeg1 to BS1 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN TimeSeg2 to BS2 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN SyncJumpWidth to SJW is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule TimeTriggeredMode to TTCM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN AutoBusOff to ABOM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN AutoWakeUp to AWUM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN AutoRetransmission to NART is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN ReceiveFifoLocked to RFLM is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename CAN TransmitFifoPriority to TXFP is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGH in HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGHZ is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule Rename TIMER TIM_CLEARINPUTSOURCE_OCREFCLR in  TIMER TIM_CLEARINPUTSOURCE_NONE for F7 family is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN_R1 - Rename FDCAN mode Master into Classic is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN_R2 - Rename FDCAN mode Slave into Classic is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - if PA10.Mode=FullDuplex, add Pin PA12 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - if PA9.Mode=FullDuplex, add Pin PA11 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - Alternatepin_1 - if PE1.Mode=FullDuplex, add Pin PB9 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - Alternatepin_1 - if PE0.Mode=FullDuplex, add Pin PB8 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - Alternatepin_2 - if PD5.Mode=FullDuplex, add Pin PD1 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R3 - Alternatepin_2 - if PD4.Mode=FullDuplex, add Pin PD0 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA10 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA9 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE1 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE0 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD5 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD4 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R3 - if PD10.Mode=FullDuplex, add Pin PB13 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R3 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R3 - Alternatepin_1 - if PB7.Mode=FullDuplex, add Pin PB6 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R3 - Alternatepin_1 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD10 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD9 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PB7 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD6 is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART TxPinLevelInvertParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART RxPinLevelInvertParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART DataInvertParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART SwapParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART OverrunDisableParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART DMADisableonRxErrorParam Mode is applicable
+2023-03-18 12:51:04,712 [INFO] Rule:225 - rule USART MSBFirstParam Mode is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Update MwName for USB_DEVICE is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change PWR_Regulator_Voltage_Scale Default Value for RCC  H7 family is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule UART/USART IPParameter rename Prescaler parameter to ClockPrescaler is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule UART/USART Prescaler rename Prescaler parameter to ClockPrescaler is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule TIM1CLockSelection is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule TIM15CLockSelection is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC SDMMC3CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC SDMMC12CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC SPI6CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC LPTIM23CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC LPTIM1CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC USART1CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC USART24CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC USART6CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC UART78CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC USART35CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC I2C46CLockSelection BCLK value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC I2C12CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC I2C35CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule align RCC LPTIM45CLockSelection default value on MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Rename DCMI PIXCK signal is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change Default Value for I2C46CLockSelection MP1 family is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change Default Value for UART for G4, G0 and WB families is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change Default Value for USART for G4, G0 and WB families is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change Default Value for USART for G4 family is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change USART1CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change USART2CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change USART3CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change UART4CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change UART5CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change LPUART1CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change LPTIM1CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change LPTIM2CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change RCC_MCO1Source refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change LSCOSource1 refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change SMPSCLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change LPTIM3CLockSelection refparam name for MP1 is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change MPCBB* Default Template Mode to Parameters is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change MPCWM* or MPCBB* Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change MPCWM* or MPCBB* No Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change TZSC IP Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change TZSC IP No Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,716 [INFO] Rule:225 - rule Change TZSC IP Privilege Mode to Parameters is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change TZSC IP No Privilege Mode to Parameters is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change TZIC IT Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change TZIC IT No Secure Mode to Parameters is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Add MPCBB1_NonSecureArea_Start_Address value with referenced to MPCBB1_NonSecureArea_Start value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Add MPCBB2_NonSecureArea_Start_Address value with referenced to MPCBB2_NonSecureArea_Start value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Add MPCWM1_NonSecureArea*_Start_Address value with referenced to MPCWM1_NonSecureArea*_Start value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Add MPCWM2_NonSecureArea*_Start_Address value with referenced to MPCWM2_NonSecureArea*_Start value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Add MPCWM3_NonSecureArea_Start_Address value with referenced to MPCWM3_NonSecureArea_Start value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change Default Value for PLL1UserDefinedConfig is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change GPIO_PuPd Default Value for USART in async mode is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change SMPSDivider Default Value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule OPAMP is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule USB device lib V2.5.3 for L0 rename USBD_SUPPORT_USER_STRING parameter to USBD_SUPPORT_USER_STRING_DESC4 is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule I2SCLockSelection clock entry align is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Assign TIMx context if used as SYS timebase is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change GPIO_Pu Default Value for I2C is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change GPIO_Pu Default Value for SMBus is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule change FDCAN default value is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule Change mode sai is applicable
+2023-03-18 12:51:04,720 [INFO] Rule:225 - rule **Change sai mode is applicable
+2023-03-18 12:51:04,773 [INFO] DbConfProperties:305 - Apply Compatibility (71/279 Rules)
+2023-03-18 12:51:04,817 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2023-03-18 12:51:05,371 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-03-18 12:51:05,371 [INFO] RtosManager:489 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-03-18 12:51:05,371 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-03-18 12:51:05,371 [INFO] RtosManager:489 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-03-18 12:51:05,371 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,411 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,415 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2023-03-18 12:51:05,822 [INFO] ThirdPartyModel:294 - Start build external matchings
+2023-03-18 12:51:06,906 [INFO] ThirdPartyModel:310 - End build external matchings
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (LPUARTFreq_Value)
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLCLKFreq_Value)
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (RTCHSEDivFreq_Value)
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (LPTIMFreq_Value)
+2023-03-18 12:51:06,942 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIMFreq_Value)
+2023-03-18 12:51:06,946 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (HSI16_VALUE)
+2023-03-18 12:51:06,946 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (48CLKFreq_Value)
+2023-03-18 12:51:06,946 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2023-03-18 12:51:06,946 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TimerFreq_Value)
+2023-03-18 12:51:06,946 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOPinFreq_Value)
+2023-03-18 12:51:07,424 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 687107008 Bytes (785383424)
+2023-03-18 12:51:07,677 [WARN] ThirdParty:807 - waiting for thirdparty lock release [change project]
+2023-03-18 12:51:07,677 [INFO] ThirdParty:809 - entering critical section [change project]
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.21.1
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.4.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.3.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.4
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.3
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.3.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.5.4
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2023-03-18 12:51:07,677 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.5.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 1.1.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.2.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:999 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.0.0
+2023-03-18 12:51:07,681 [INFO] ThirdParty:815 - exiting critical section [change project]
+2023-03-18 12:51:08,334 [INFO] PinOutPanel:1477 - setPackage(No Configuration,No Configuration)
+2023-03-18 12:51:08,338 [INFO] PinOutPanel:1477 - setPackage(STM32L432KCUx,UFQFPN32)
+2023-03-18 12:51:10,243 [INFO] UtilMem:74 - Before build in PCC Used Memory: 705255064 Bytes (785383424)
+2023-03-18 12:51:13,295 [INFO] UtilMem:74 - After build in PCC Used Memory: 689839000 Bytes (785383424)
+2023-03-18 12:51:13,351 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,367 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,371 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,375 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:13,379 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2023-03-18 12:51:14,683 [INFO] CADModel:164 - CPN selected for project levelSTM32L432KCU3
+2023-03-18 12:51:14,683 [INFO] CADModel:113 - Register for checkConnection events
+2023-03-18 12:51:14,752 [INFO] OpenFileManager:327 - Restore cursor
+2023-03-18 12:51:17,357 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 703356928 Bytes (785383424)
+2023-03-18 12:51:17,473 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 713842688 Bytes (785383424)
+2023-03-18 12:51:18,376 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 12:51:18,376 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 12:51:18,376 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 12:51:18,376 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 12:51:18,376 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 12:51:18,386 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 12:51:19,265 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 12:51:20,249 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 12:51:20,573 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 12:51:20,905 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 12:51:21,273 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 12:51:21,605 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 12:51:21,625 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 12:51:21,805 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 12:51:21,905 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 12:51:22,235 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 12:51:22,245 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 12:51:22,455 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 12:51:22,505 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 12:51:22,795 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 12:51:22,935 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 12:51:23,364 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 12:51:23,384 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 12:51:23,734 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 12:51:25,641 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 560mS.
+2023-03-18 12:51:25,661 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 12:51:26,385 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 12:51:26,415 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2023-03-18 12:51:26,435 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2023-03-18 12:51:26,475 [INFO] ApiDbMcu:505 - Load IP Config File for TOUCHSENSING
+2023-03-18 12:51:26,513 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2023-03-18 12:51:35,541 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 9880mS.
+2023-03-18 12:51:35,541 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 12:51:35,551 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 12:51:36,778 [INFO] McuFinderGlobals:65 - Set McuFinderConnectedMode to true
+2023-03-18 12:51:36,788 [INFO] ApiDb:447 - Save user favorites file C:\Users\rajka/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-03-18 12:51:36,788 [INFO] ApiDb:451 - User favorites MCUs=[]
+2023-03-18 12:51:36,788 [INFO] ApiDb:447 - Save user favorites file C:\Users\rajka/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-03-18 12:51:36,788 [INFO] ApiDb:451 - User favorites Boards=[]
+2023-03-18 12:52:52,487 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 893873656 Bytes (1019215872)
+2023-03-18 12:52:54,859 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 606919928 Bytes (1019215872)
+2023-03-18 12:53:01,495 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 724882680 Bytes (1019215872)
+2023-03-18 12:53:02,333 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 12:53:02,337 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 12:53:02,337 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 12:53:02,337 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 12:53:02,337 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 12:53:02,345 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 12:53:02,695 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 12:53:02,903 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 12:53:03,009 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 12:53:03,272 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 12:53:03,620 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 12:53:03,815 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 12:53:03,847 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 12:53:04,003 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 12:53:04,115 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 12:53:04,335 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 12:53:04,343 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 12:53:04,487 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 12:53:04,511 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 12:53:04,718 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 12:53:04,789 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 12:53:05,137 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 12:53:05,157 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 12:53:05,396 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 12:53:06,847 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 554mS.
+2023-03-18 12:53:06,851 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 12:53:07,687 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 12:53:10,903 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4052mS.
+2023-03-18 12:53:10,903 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 12:53:10,907 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:00:23,123 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:02:50,646 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 539269128 Bytes (1031798784)
+2023-03-18 13:02:52,516 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 553426952 Bytes (1031798784)
+2023-03-18 13:02:54,523 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 620009480 Bytes (1031798784)
+2023-03-18 13:02:55,049 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 13:02:55,049 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 13:02:55,049 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 13:02:55,049 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 13:02:55,049 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 13:02:55,053 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 13:02:55,362 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 13:02:55,886 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 13:02:56,007 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 13:02:56,356 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 13:02:56,708 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 13:02:57,399 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 13:02:57,412 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 13:02:57,617 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 13:02:57,649 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 13:02:58,031 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 13:02:58,040 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 13:02:58,209 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 13:02:58,256 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 13:02:58,416 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 13:02:58,507 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 13:02:58,692 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 13:02:58,723 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 13:02:59,060 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 13:03:01,457 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1350mS.
+2023-03-18 13:03:01,463 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 13:03:01,923 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 13:03:05,343 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3880mS.
+2023-03-18 13:03:05,344 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:03:05,349 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:05:54,619 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 752213200 Bytes (1033895936)
+2023-03-18 13:06:00,749 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 567073056 Bytes (1033895936)
+2023-03-18 13:06:02,566 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 580619136 Bytes (1033895936)
+2023-03-18 13:06:03,923 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 651395968 Bytes (1033895936)
+2023-03-18 13:06:04,273 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 13:06:04,273 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 13:06:04,273 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 13:06:04,273 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 13:06:04,273 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 13:06:04,273 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 13:06:04,481 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 13:06:04,607 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 13:06:04,775 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 13:06:05,085 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 13:06:05,377 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 13:06:05,585 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 13:06:05,632 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 13:06:05,804 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 13:06:05,889 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 13:06:06,079 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 13:06:06,087 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 13:06:06,203 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 13:06:06,237 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 13:06:06,372 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 13:06:06,441 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 13:06:06,668 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 13:06:06,703 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 13:06:06,984 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 13:06:09,256 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1287mS.
+2023-03-18 13:06:09,265 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 13:06:09,793 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 13:06:12,943 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3678mS.
+2023-03-18 13:06:12,944 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 13:06:12,948 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:12:39,408 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:35:11,355 [INFO] DmaTabbedPanel:202 - Cannot restore the selected Tab for DMA
+2023-03-18 13:35:12,025 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:35:35,692 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:35:38,300 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:37:07,214 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:38:13,249 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:38:27,832 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 728114712 Bytes (1033895936)
+2023-03-18 13:38:29,859 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 535496328 Bytes (1033895936)
+2023-03-18 13:38:31,203 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 610838224 Bytes (1033895936)
+2023-03-18 13:38:31,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 13:38:31,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 13:38:31,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 13:38:31,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 13:38:31,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 13:38:31,769 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 13:38:32,032 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 13:38:32,240 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 13:38:32,350 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 13:38:32,593 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 13:38:32,876 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 13:38:33,457 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 13:38:33,469 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 13:38:33,673 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 13:38:33,707 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 13:38:33,948 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 13:38:33,955 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 13:38:34,220 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 13:38:34,258 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 13:38:34,431 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 13:38:34,514 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 13:38:34,672 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 13:38:34,714 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 13:38:34,944 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 13:38:37,214 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1423mS.
+2023-03-18 13:38:37,222 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 13:38:37,916 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 13:38:41,101 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3879mS.
+2023-03-18 13:38:41,102 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 13:38:41,106 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:42:13,831 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 13:42:21,668 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 627516464 Bytes (1043333120)
+2023-03-18 13:42:22,788 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 639573040 Bytes (1043333120)
+2023-03-18 13:42:24,143 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 663168048 Bytes (1043333120)
+2023-03-18 13:42:24,554 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 13:42:24,554 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 13:42:24,554 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 13:42:24,554 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 13:42:24,554 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 13:42:24,554 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 13:42:24,728 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 13:42:24,852 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 13:42:24,926 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 13:42:25,089 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 13:42:25,489 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 13:42:25,653 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 13:42:25,664 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 13:42:25,821 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 13:42:25,856 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 13:42:26,046 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 13:42:26,048 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 13:42:26,146 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 13:42:26,182 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 13:42:26,336 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 13:42:26,418 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 13:42:26,554 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 13:42:26,586 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 13:42:26,832 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 13:42:28,809 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1268mS.
+2023-03-18 13:42:28,811 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 13:42:29,339 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 13:42:31,980 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3169mS.
+2023-03-18 13:42:31,981 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:42:31,985 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:45:23,044 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 717076504 Bytes (1043333120)
+2023-03-18 13:45:24,517 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 728600504 Bytes (1043333120)
+2023-03-18 13:45:25,774 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 572033760 Bytes (1043333120)
+2023-03-18 13:45:26,307 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 13:45:26,307 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 13:45:26,307 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 13:45:26,307 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 13:45:26,309 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 13:45:26,309 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 13:45:26,611 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 13:45:26,812 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 13:45:26,932 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 13:45:27,114 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 13:45:27,391 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 13:45:27,583 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 13:45:27,601 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 13:45:27,747 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 13:45:27,836 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 13:45:27,987 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 13:45:27,994 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 13:45:28,091 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 13:45:28,137 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 13:45:28,477 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 13:45:28,556 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 13:45:28,715 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 13:45:28,742 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 13:45:28,914 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 13:45:30,948 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1202mS.
+2023-03-18 13:45:30,958 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 13:45:31,735 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 13:45:34,242 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3284mS.
+2023-03-18 13:45:34,242 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 13:45:34,242 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 14:04:56,680 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 14:05:15,269 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 747486096 Bytes (1043333120)
+2023-03-18 14:05:17,773 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 535903352 Bytes (1043333120)
+2023-03-18 14:05:19,280 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 531285424 Bytes (1043333120)
+2023-03-18 14:05:19,757 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 14:05:19,757 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 14:05:19,757 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 14:05:19,757 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 14:05:19,757 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 14:05:19,761 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 14:05:19,959 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 14:05:20,124 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 14:05:20,199 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 14:05:20,417 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 14:05:20,858 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 14:05:21,123 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 14:05:21,133 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 14:05:21,231 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 14:05:21,274 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 14:05:21,440 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 14:05:21,451 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 14:05:21,544 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 14:05:21,577 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 14:05:21,744 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 14:05:21,815 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 14:05:22,020 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 14:05:22,048 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 14:05:22,509 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 14:05:26,343 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1952mS.
+2023-03-18 14:05:26,355 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 14:05:27,199 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 14:05:30,443 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4088mS.
+2023-03-18 14:05:30,443 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 14:05:30,447 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 14:13:32,165 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 740820176 Bytes (1043333120)
+2023-03-18 14:13:33,685 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 762770128 Bytes (1043333120)
+2023-03-18 14:13:35,071 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 838864080 Bytes (1043333120)
+2023-03-18 14:13:35,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 14:13:35,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 14:13:35,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 14:13:35,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 14:13:35,570 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 14:13:35,570 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 14:13:35,943 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 14:13:36,102 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 14:13:36,190 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 14:13:36,419 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 14:13:36,689 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 14:13:36,914 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 14:13:36,924 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 14:13:37,092 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 14:13:37,177 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 14:13:37,476 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 14:13:37,483 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 14:13:37,624 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 14:13:37,660 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 14:13:37,924 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 14:13:38,009 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 14:13:38,210 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 14:13:38,243 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 14:13:38,751 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 14:13:41,169 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1389mS.
+2023-03-18 14:13:41,199 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 14:13:41,731 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 14:13:45,140 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3941mS.
+2023-03-18 14:13:45,141 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 14:13:45,145 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 17:00:53,432 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 17:01:12,774 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 725978752 Bytes (1047527424)
+2023-03-18 17:01:14,830 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 521772016 Bytes (1047527424)
+2023-03-18 17:01:16,390 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 549415728 Bytes (1047527424)
+2023-03-18 17:01:16,883 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 17:01:16,883 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 17:01:16,883 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 17:01:16,885 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 17:01:16,885 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 17:01:16,885 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 17:01:17,156 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 17:01:17,338 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 17:01:17,469 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 17:01:17,737 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 17:01:18,058 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 17:01:18,637 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 17:01:18,678 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 17:01:18,854 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 17:01:18,885 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 17:01:19,244 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 17:01:19,269 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 17:01:19,439 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 17:01:19,469 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 17:01:19,779 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 17:01:19,864 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 17:01:20,055 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 17:01:20,088 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 17:01:20,367 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 17:01:23,103 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1623mS.
+2023-03-18 17:01:23,111 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 17:01:23,651 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 17:01:27,333 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4222mS.
+2023-03-18 17:01:27,334 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 17:01:27,339 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 17:04:06,214 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, USART2]
+2023-03-18 17:04:22,052 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 528516128 Bytes (1049624576)
+2023-03-18 17:04:23,733 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 540332792 Bytes (1049624576)
+2023-03-18 17:04:25,192 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 569170680 Bytes (1049624576)
+2023-03-18 17:04:25,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 17:04:25,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 17:04:25,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 17:04:25,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 17:04:25,711 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 17:04:25,711 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 17:04:25,970 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 17:04:26,109 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 17:04:26,211 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 17:04:26,372 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 17:04:26,676 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 17:04:26,863 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 17:04:26,926 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 17:04:27,107 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 17:04:27,144 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 17:04:27,581 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 17:04:27,591 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 17:04:27,755 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 17:04:27,904 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 17:04:28,256 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 17:04:28,384 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 17:04:28,555 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 17:04:28,588 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 17:04:29,138 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 17:04:31,950 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1535mS.
+2023-03-18 17:04:31,957 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 17:04:32,583 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 17:04:36,002 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4045mS.
+2023-03-18 17:04:36,003 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 17:04:36,055 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 17:07:08,112 [INFO] ParamManager:821 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2023-03-18 17:07:08,148 [INFO] ParamManager:821 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2023-03-18 17:07:08,192 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,283 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,287 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,291 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,307 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:08,467 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-18 17:07:08,643 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-18 17:07:08,827 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,150 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,154 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,334 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,438 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,442 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,446 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:09,513 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:14,841 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,516x101,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-03-18 17:07:17,588 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,598 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:07:17,648 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:08:43,489 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 927911176 Bytes (1049624576)
+2023-03-18 17:08:45,171 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 940494088 Bytes (1049624576)
+2023-03-18 17:08:46,667 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 556529168 Bytes (1049624576)
+2023-03-18 17:08:47,127 [INFO] ProjectBuilder:2243 - IP not ready for code generation: Clock
+2023-03-18 17:09:06,563 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JFrame (sun.awt.windows.WEmbeddedFrame and javax.swing.JFrame are in module java.desktop of loader 'bootstrap')
+2023-03-18 17:09:06,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:424)
+2023-03-18 17:09:06,573 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:357)
+2023-03-18 17:09:06,583 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:418)
+2023-03-18 17:09:06,583 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:269)
+2023-03-18 17:09:06,583 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:143)
+2023-03-18 17:09:06,583 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:74)
+2023-03-18 17:09:06,583 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:622)
+2023-03-18 17:09:06,593 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:597)
+2023-03-18 17:09:06,593 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4090)
+2023-03-18 17:09:06,593 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+2023-03-18 17:09:06,593 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+2023-03-18 17:09:06,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+2023-03-18 17:09:06,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+2023-03-18 17:09:06,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+2023-03-18 17:09:06,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+2023-03-18 17:09:06,613 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2023-03-18 17:09:06,613 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+2023-03-18 17:09:06,613 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+2023-03-18 17:09:06,613 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+2023-03-18 17:09:06,613 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-03-18 17:09:06,623 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-03-18 17:09:06,633 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2023-03-18 17:09:06,643 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2023-03-18 17:09:06,643 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2023-03-18 17:09:06,643 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2023-03-18 17:09:06,643 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2023-03-18 17:09:06,653 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2023-03-18 17:09:06,653 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,189 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,209 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,239 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:10,249 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:12,964 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,014 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,164 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,174 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:13,234 [INFO] ADCParametersView:113 -                Rank 1 : false
+2023-03-18 17:09:17,850 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 710242104 Bytes (1049624576)
+2023-03-18 17:09:19,684 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 544641592 Bytes (1049624576)
+2023-03-18 17:09:21,309 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 571904568 Bytes (1049624576)
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-18 17:09:21,798 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 17:09:21,800 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 17:09:22,042 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 17:09:22,191 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 17:09:22,274 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 17:09:22,486 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 17:09:22,933 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 17:09:23,180 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 17:09:23,192 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 17:09:23,315 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 17:09:23,350 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 17:09:23,718 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 17:09:23,793 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 17:09:23,937 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 17:09:23,997 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 17:09:24,172 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 17:09:24,282 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 17:09:24,445 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 17:09:24,479 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 17:09:24,796 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 17:09:26,510 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1142mS.
+2023-03-18 17:09:26,517 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 17:09:27,493 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 17:09:30,813 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4296mS.
+2023-03-18 17:09:30,814 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-18 17:09:30,819 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
