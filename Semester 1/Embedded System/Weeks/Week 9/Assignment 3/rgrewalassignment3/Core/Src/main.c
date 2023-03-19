@@ -23,6 +23,8 @@
 /* USER CODE BEGIN Includes */
 #include "ssd1331.h"
 #include "logo.h"
+#include "stdint.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,6 +43,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi1;
+ADC_HandleTypeDef hadc1;
 
 UART_HandleTypeDef huart2;
 
@@ -53,6 +56,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
+static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -90,28 +94,88 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  MX_SPI1_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
   ssd1331_init();
   ssd1331_clear_screen(BLACK);
-    ssd1331_draw_line(1, 1, 10, 10, RED);
-    ssd1331_display_num(10, 10, 10, 2, FONT_1608, RED);
-    ssd1331_display_char(20, 20, 'A', FONT_1608, RED);
-
-  ssd1331_draw_rect(0, 0, 90, 60, GREEN);
-  ssd1331_draw_bitmap(10, 10, ohm, 20, 20, RED);
- // ssd1331_draw_bitmap(10, 10, heart, 30, 30, RED);
- // ssd1331_draw_bitmap(10, 10, heart_inverted, 30, 30, RED);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  char str[80] = "Temp = 0C";
+  uint32_t temp;
+  ssd1331_display_string(0,0,str,FONT_1608,WHITE);
+  char color = 'w';
+  char prevColor = 'w';
+  //char strTemp[10];
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    if(HAL_ADC_Start(&hadc1) != HAL_OK){
+      printf("HAL_ADC_Start Error \r\n");
+    }
+    if(HAL_ADC_PollForConversion(&hadc1,10) != HAL_OK){
+      printf("HAL_ADC_PollForConversion Error \r\n");
+    }else{
+      temp = HAL_ADC_GetValue(&hadc1);
+    }
+    float floatTemp = (temp - 500)/10;
+    temp = (temp - 500)/10;
+    int decimalTemp = (floatTemp - temp) * 100;
+    if(temp > -15){
+      color = 'w';
+    }else if(color < 5 && color > -15){
+      color = 'b';
+    }else if(color < 15 && color > 5){
+      color = 'y';
+    }else if(color < 25 && color > 15){
+      color = 'o';
+    }else{
+      color = 'r';
+    }
+    if(prevColor != color){
+      ssd1331_clear_screen(BLACK);
+    }
+    prevColor = color;
+    
+    sprintf(str,"Temp = %d.%d C",temp,decimalTemp);
+    ssd1331_display_string(0,0,str,FONT_1608,WHITE);
+    switch(color){
+      case 'w':
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        break;
+      case 'b':
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        break;
+      case 'y':
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        break;
+      case 'o':
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        break;
+      case 'r':
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        break;
+      default:
+        HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        break;
+    }
+    HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -177,20 +241,22 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief SPI1 Initialization Function
+  * @brief ADC1 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_SPI1_Init(void)
+static void MX_ADC1_Init(void)
 {
 
-  /* USER CODE BEGIN SPI1_Init 0 */
+  /* USER CODE BEGIN ADC1_Init 0 */
 
-  /* USER CODE END SPI1_Init 0 */
+  /* USER CODE END ADC1_Init 0 */
 
-  /* USER CODE BEGIN SPI1_Init 1 */
+  ADC_ChannelConfTypeDef sConfig = {0};
 
-  /* USER CODE END SPI1_Init 1 */
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
@@ -211,8 +277,46 @@ static void MX_SPI1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN SPI1_Init 2 */
-
+  
   /* USER CODE END SPI1_Init 2 */
+
+  /** Common config
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.LowPowerAutoWait = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc1.Init.OversamplingMode = DISABLE;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_12;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+  sConfig.SingleDiff = ADC_SINGLE_ENDED;
+  sConfig.OffsetNumber = ADC_OFFSET_NONE;
+  sConfig.Offset = 0;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
 
 }
 
@@ -266,7 +370,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin|LED_GREEN_Pin|LED_RED_Pin,GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : LED_BLUE_Pin LED_GREEN_Pin LED_RED_Pin DISPLAY_CLK_Pin */
+  GPIO_InitStruct.Pin = LED_BLUE_Pin|LED_GREEN_Pin|LED_RED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD3_Pin SSD1331_CS_Pin SSD1331_DC_Pin SSD1331_RES_Pin */
   GPIO_InitStruct.Pin = LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin;
