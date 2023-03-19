@@ -1424,3 +1424,193 @@
 2023-03-18 17:09:30,813 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4296mS.
 2023-03-18 17:09:30,814 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
 2023-03-18 17:09:30,819 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 17:34:22,079 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-18 17:34:39,157 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 558475912 Bytes (1049624576)
+2023-03-18 17:34:41,382 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 570532488 Bytes (1049624576)
+2023-03-18 17:34:43,407 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 588172184 Bytes (1049624576)
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-18 17:34:44,238 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-18 17:34:44,242 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-18 17:34:44,635 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-18 17:34:45,003 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-18 17:34:45,123 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-18 17:34:45,503 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-18 17:34:46,121 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-18 17:34:46,763 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-18 17:34:46,775 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-18 17:34:46,974 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-18 17:34:47,063 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-18 17:34:47,504 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-18 17:34:47,528 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-18 17:34:47,702 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-18 17:34:47,754 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-18 17:34:48,040 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-18 17:34:48,203 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-18 17:34:48,680 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-18 17:34:48,794 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-18 17:34:49,265 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-18 17:34:53,198 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 2739mS.
+2023-03-18 17:34:53,205 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-18 17:34:53,785 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-18 17:34:57,924 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4719mS.
+2023-03-18 17:34:57,924 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-18 17:34:57,932 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2023-03-19 01:11:29,484 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:13:20,687 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:14:37,389 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 863921576 Bytes (1049624576)
+2023-03-19 01:14:38,974 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 878082072 Bytes (1049624576)
+2023-03-19 01:14:40,819 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 585958512 Bytes (1049624576)
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-19 01:14:41,281 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-19 01:14:41,281 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-19 01:14:41,705 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-19 01:14:41,992 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-19 01:14:42,130 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-19 01:14:42,372 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-19 01:14:42,830 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-19 01:14:43,351 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-19 01:14:43,416 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-19 01:14:43,629 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-19 01:14:43,704 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-19 01:14:44,228 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-19 01:14:44,309 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-19 01:14:44,443 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-19 01:14:44,529 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-19 01:14:44,759 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-19 01:14:44,873 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-19 01:14:45,152 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-19 01:14:45,185 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-19 01:14:45,425 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-19 01:14:48,432 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1866mS.
+2023-03-19 01:14:48,447 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-19 01:14:49,681 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-19 01:14:52,878 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4431mS.
+2023-03-19 01:14:52,878 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:14:52,884 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:28:30,197 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:30:10,747 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 650445344 Bytes (1056964608)
+2023-03-19 01:38:08,356 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:38:11,226 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:38:15,219 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:42:16,786 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:42:23,397 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:42:40,736 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 940877544 Bytes (1056964608)
+2023-03-19 01:42:42,679 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 955557608 Bytes (1056964608)
+2023-03-19 01:42:45,082 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 630111904 Bytes (1056964608)
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-19 01:42:45,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-19 01:42:45,581 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-19 01:42:45,803 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-19 01:42:45,949 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-19 01:42:46,008 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-19 01:42:46,228 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-19 01:42:46,491 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-19 01:42:46,907 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-19 01:42:46,927 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-19 01:42:47,171 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-19 01:42:47,204 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-19 01:42:47,459 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-19 01:42:47,471 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-19 01:42:47,584 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-19 01:42:47,613 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-19 01:42:47,870 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-19 01:42:47,978 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-19 01:42:48,166 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-19 01:42:48,217 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-19 01:42:48,422 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-19 01:42:50,132 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 810mS.
+2023-03-19 01:42:50,139 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-19 01:42:51,037 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-19 01:42:53,706 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3567mS.
+2023-03-19 01:42:53,706 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:42:53,710 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:48:11,668 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:49:04,416 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:49:30,776 [INFO] Gpio:272 - dependency for GPIO [ADC1, RCC, SYS, USART2]
+2023-03-19 01:49:50,651 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 809060888 Bytes (1064304640)
+2023-03-19 01:49:52,377 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 602397672 Bytes (1064304640)
+2023-03-19 01:49:54,578 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 630872408 Bytes (1064304640)
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-19 01:49:55,162 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-19 01:49:55,162 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-19 01:49:55,414 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-19 01:49:55,558 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-19 01:49:55,658 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-19 01:49:55,828 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-19 01:49:56,150 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-19 01:49:56,358 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-19 01:49:56,382 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-19 01:49:56,513 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-19 01:49:56,625 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-19 01:49:56,971 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-19 01:49:56,992 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-19 01:49:57,109 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-19 01:49:57,156 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-19 01:49:57,455 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-19 01:49:57,629 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-19 01:49:57,838 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-19 01:49:57,880 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-19 01:49:58,120 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-19 01:50:00,516 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1315mS.
+2023-03-19 01:50:00,526 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-19 01:50:01,395 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-19 01:50:03,910 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 3384mS.
+2023-03-19 01:50:03,910 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:50:03,915 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:56:18,055 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 685937112 Bytes (1066401792)
+2023-03-19 01:56:19,789 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 693287424 Bytes (1066401792)
+2023-03-19 01:56:21,535 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 681578408 Bytes (1066401792)
+2023-03-19 01:56:22,016 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-19 01:56:22,017 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-03-19 01:56:22,017 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-19 01:56:22,017 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-19 01:56:22,017 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-03-19 01:56:22,018 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-19 01:56:22,019 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-19 01:56:22,374 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp_save
+2023-03-19 01:56:22,754 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\license.tmp
+2023-03-19 01:56:22,863 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp_save
+2023-03-19 01:56:23,117 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\gpio.tmp
+2023-03-19 01:56:23,463 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c_save
+2023-03-19 01:56:23,663 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_it.c
+2023-03-19 01:56:23,676 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h_save
+2023-03-19 01:56:23,961 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_it.h
+2023-03-19 01:56:23,997 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c_save
+2023-03-19 01:56:24,210 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\stm32l4xx_hal_msp.c
+2023-03-19 01:56:24,221 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp_save
+2023-03-19 01:56:24,360 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\MXTmpFiles\system.tmp
+2023-03-19 01:56:24,402 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h_save
+2023-03-19 01:56:24,622 [INFO] CodeEngine:327 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\stm32l4xx_hal_conf.h
+2023-03-19 01:56:24,720 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h_save
+2023-03-19 01:56:24,889 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Inc\main.h
+2023-03-19 01:56:24,949 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c_save
+2023-03-19 01:56:25,210 [INFO] CodeEngine:271 - Generated code: C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\Core\Src\main.c
+2023-03-19 01:56:27,671 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 1336mS.
+2023-03-19 01:56:27,675 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-19 01:56:28,507 [INFO] ConfigFileManager:1396 - The Die is : DIE435
+2023-03-19 01:56:31,746 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 4071mS.
+2023-03-19 01:56:31,746 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 01:56:31,748 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-19 02:07:08,617 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-03-19 02:07:09,366 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-03-19 02:07:10,535 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2023-03-19 11:57:42,819 [INFO] Activator:179 - 
+
+
+2023-03-19 11:57:42,821 [INFO] Activator:180 - !SESSION log4j initialized

@@ -1,16 +1,22 @@
-19:27:36 **** Incremental Build of configuration Debug for project rgrewalassignment3 ****
+15:40:11 **** Incremental Build of configuration Debug for project rgrewalassignment3 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:144:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-  144 |     sprintf(str,"Temp = %d.%d C",temp,decimalTemp);
-      |                         ~^       ~~~~
-      |                          |       |
-      |                          int     uint32_t {aka long unsigned int}
-      |                         %ld
+../Core/Src/main.c:166:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  166 |       sprintf(str,"Temp = %d.00 C",temperature);
+      |                           ~^       ~~~~~~~~~~~
+      |                            |       |
+      |                            int     uint32_t {aka long unsigned int}
+      |                           %ld
+../Core/Src/main.c:168:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  168 |       sprintf(str,"Temp = %d.%d C",temperature,decimalTemperature);
+      |                           ~^       ~~~~~~~~~~~
+      |                            |       |
+      |                            int     uint32_t {aka long unsigned int}
+      |                           %ld
 ../Core/Src/main.c: At top level:
-../Core/Src/main.c:58:13: warning: 'MX_SPI1_Init' declared 'static' but never defined [-Wunused-function]
-   58 | static void MX_SPI1_Init(void);
+../Core/Src/main.c:60:13: warning: 'MX_SPI1_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_SPI1_Init(void);
       |             ^~~~~~~~~~~~
 arm-none-eabi-gcc -o "rgrewalassignment3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 9\Assignment 3\rgrewalassignment3\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rgrewalassignment3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: rgrewalassignment3.elf
@@ -18,11 +24,11 @@ Finished building target: rgrewalassignment3.elf
 arm-none-eabi-size   rgrewalassignment3.elf 
 arm-none-eabi-objdump -h -S  rgrewalassignment3.elf  > "rgrewalassignment3.list"
    text	   data	    bss	    dec	    hex	filename
-  27272	    120	   1920	  29312	   7280	rgrewalassignment3.elf
+  28508	    120	   1944	  30572	   776c	rgrewalassignment3.elf
 Finished building: default.size.stdout
  
 Finished building: rgrewalassignment3.list
  
 
-19:27:37 Build Finished. 0 errors, 2 warnings. (took 1s.665ms)
+15:40:13 Build Finished. 0 errors, 3 warnings. (took 1s.773ms)
 

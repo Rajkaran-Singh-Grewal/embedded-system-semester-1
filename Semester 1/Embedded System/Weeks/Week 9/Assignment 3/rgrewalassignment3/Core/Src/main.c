@@ -45,6 +45,8 @@
 SPI_HandleTypeDef hspi1;
 ADC_HandleTypeDef hadc1;
 
+DAC_HandleTypeDef hdac1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -57,6 +59,7 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_DAC1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -95,6 +98,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_ADC1_Init();
+  MX_DAC1_Init();
   /* USER CODE BEGIN 2 */
 
   ssd1331_init();
@@ -103,76 +107,106 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  char str[80] = "Temp = 0C";
-  uint32_t temp;
-  ssd1331_display_string(0,0,str,FONT_1608,WHITE);
+
+
+  // predefine all the variables
+  char str[80] = "Temp = 0.00C";
+  uint32_t temperature;
   char color = 'w';
   char prevColor = 'w';
-  //char strTemp[10];
+  uint32_t greenValue;
+  float floatTemperature;
+  int decimalTemperature;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    
+    // start the analog to digital convertor
     if(HAL_ADC_Start(&hadc1) != HAL_OK){
       printf("HAL_ADC_Start Error \r\n");
     }
     if(HAL_ADC_PollForConversion(&hadc1,10) != HAL_OK){
       printf("HAL_ADC_PollForConversion Error \r\n");
     }else{
-      temp = HAL_ADC_GetValue(&hadc1);
+      // get the value from the temperature sensor
+      temperature = HAL_ADC_GetValue(&hadc1);
     }
-    float floatTemp = (temp - 500)/10;
-    temp = (temp - 500)/10;
-    int decimalTemp = (floatTemp - temp) * 100;
-    if(temp > -15){
+
+    // start the digital to analog convertor
+    if(HAL_DAC_Start(&hdac1, DAC_CHANNEL_1) != HAL_OK){
+      printf("HAL_DAC_Start Error \r\n");
+    }
+    // convert the value from the sensor to Celsius following the formula given in the document
+    floatTemperature = (float)(temperature - 500)/10;
+    temperature = (uint32_t)(temperature - 500)/10;
+    // get the decimal value from the float so we can added it into string as float can't be used with stm32
+    decimalTemperature = (floatTemperature - temperature) * 100;
+    // get the color according to the question and the temperature
+    if(temperature >= -15){
       color = 'w';
-    }else if(color < 5 && color > -15){
+    }else if(temperature < 5 && temperature >= -15){
       color = 'b';
-    }else if(color < 15 && color > 5){
+    }else if(temperature < 15 && temperature >= 5){
       color = 'y';
-    }else if(color < 25 && color > 15){
+    }else if(temperature < 25 && temperature >= 15){
       color = 'o';
-    }else{
+    }else if(temperature >= 25){
       color = 'r';
     }
+    // if the color changes we will clear the screen
     if(prevColor != color){
       ssd1331_clear_screen(BLACK);
     }
     prevColor = color;
+
+    // if there is no decimal position in the formula we will format the string accordingly
+    if(decimalTemperature == 0){
+      sprintf(str,"Temp = %d.00 C",temperature);
+    }else{
+      sprintf(str,"Temp = %d.%d C",temperature,decimalTemperature);
+    }
+    // display the string to the display unit
+    ssd1331_display_string(0,0,str,FONT_1206,WHITE);
     
-    sprintf(str,"Temp = %d.%d C",temp,decimalTemp);
-    ssd1331_display_string(0,0,str,FONT_1608,WHITE);
+    // light up the leds according to which the table given
     switch(color){
       case 'w':
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        greenValue = (3.3 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
       case 'b':
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        greenValue = (0 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
       case 'y':
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        greenValue = (3 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
       case 'o':
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+        greenValue = (2.5 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
       case 'r':
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        greenValue = (0 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
       default:
         HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin,GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin,GPIO_PIN_RESET);
+        greenValue = (0 * (4096)) / 3.3;
+        HAL_DAC_SetValue(&hdac1,DAC_CHANNEL_1, DAC_ALIGN_12B_R,greenValue);
         break;
     }
     HAL_Delay(1000);
@@ -321,6 +355,49 @@ static void MX_ADC1_Init(void)
 }
 
 /**
+  * @brief DAC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_DAC1_Init(void)
+{
+
+  /* USER CODE BEGIN DAC1_Init 0 */
+
+  /* USER CODE END DAC1_Init 0 */
+
+  DAC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN DAC1_Init 1 */
+
+  /* USER CODE END DAC1_Init 1 */
+
+  /** DAC Initialization
+  */
+  hdac1.Instance = DAC1;
+  if (HAL_DAC_Init(&hdac1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** DAC channel OUT1 config
+  */
+  sConfig.DAC_SampleAndHold = DAC_SAMPLEANDHOLD_DISABLE;
+  sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
+  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_ENABLE;
+  sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_DISABLE;
+  sConfig.DAC_UserTrimming = DAC_TRIMMING_FACTORY;
+  if (HAL_DAC_ConfigChannel(&hdac1, &sConfig, DAC_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN DAC1_Init 2 */
+
+  /* USER CODE END DAC1_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -370,13 +447,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED_BLUE_Pin|LED_GREEN_Pin|LED_RED_Pin,GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin|LED_BLUE_Pin|SPI1_SCK_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED_BLUE_Pin LED_GREEN_Pin LED_RED_Pin DISPLAY_CLK_Pin */
-  GPIO_InitStruct.Pin = LED_BLUE_Pin|LED_GREEN_Pin|LED_RED_Pin;
+  /*Configure GPIO pins : LED_RED_Pin LED_BLUE_Pin SPI1_SCK_Pin */
+  GPIO_InitStruct.Pin = LED_RED_Pin|LED_BLUE_Pin|SPI1_SCK_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
