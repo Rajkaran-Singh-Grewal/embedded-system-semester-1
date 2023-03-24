@@ -1,0 +1,73 @@
+Library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity rgrewallab8VHDL is 
+    port(
+        S: in std_logic_vector(5 downto 0);
+        choice: in std_logic_vector(1 downto 0);
+        P: in std_logic;
+        hex1: out std_logic_vector(6 downto 0);
+        hex2: out std_logic_vector(6 downto 0);
+        hex3: out std_logic_vector(6 downto 0);
+        hex4: out std_logic_vector(6 downto 0);
+        led: out std_logic 
+    );
+end rgrewallab8VHDL;
+
+architecture shiftRegister of rgrewallab8VHDL is
+    signal count: integer <= 0;
+    signal loadValue: std_logic_vector(3 downto 0);
+    begin
+        process(S,choice) is 
+            begin
+                if !P then
+                    led <= 1;
+                    count <= count + 1;
+                    if count == 0 then
+                        case choice is 
+                            when '00' =>
+                            
+                            when '01' =>
+                                loadValue(3) <= loadValue(2);
+                                loadValue(2) <= loadValue(1);
+                                loadValue(1) <= loadValue(0);
+                                loadValue(0) <= S(0);
+                            
+                            when '10' =>
+                                loadValue(0) <= loadValue(1);
+                                loadValue(1) <= loadValue(2);
+                                loadValue(2) <= loadValue(3);
+                                loadValue(3) <= S(5);
+
+                            when '11' =>
+                                loadValue(0) <= S(1);
+                                loadValue(1) <= S(2);
+                                loadValue(2) <= S(3);
+                                loadValue(3) <= S(4);
+                            
+                            when others =>
+                                loadValue <= "0000";
+                        end case;
+                    end if;
+                    hex1 <= displaySevenSegment(loadValue(0));
+                    hex2 <= displaySevenSegment(loadValue(1));
+                    hex3 <= displaySevenSegment(loadValue(2));
+                    hex4 <= displaySevenSegment(loadValue(3));
+                else 
+                    led <= 0;
+                    count <= 0;
+                end if;
+        end process;
+    function displaySevenSegment(character: std_logic) return std_logic_vector(6 downto 0) is
+        outputResult: std_logic_vector(6 downto 0);
+    begin
+        case character is 
+            when '0' =>
+                outputResult <= "1000000";
+            when '1' =>
+                outputResult <= "1111001";
+            when others =>
+                outputResult <= "0000000";
+        end case;
+        return outputResult;
+    end function displaySevenSegment;
+end shiftRegister;
