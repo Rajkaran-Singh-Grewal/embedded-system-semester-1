@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rgrewallab8verilog
-Thu Mar 23 10:39:57 2023
+Thu Mar 23 17:18:29 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 23 10:39:57 2023          ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 23 17:18:29 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; rgrewallab8verilog                             ;
 ; Top-level Entity Name           ; rgrewallab8verilog                             ;
@@ -179,31 +179,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimate of Logic utilization (ALMs needed) ; 34      ;
-;                                             ;         ;
-; Combinational ALUT usage for logic          ; 58      ;
-;     -- 7 input functions                    ; 0       ;
-;     -- 6 input functions                    ; 10      ;
-;     -- 5 input functions                    ; 4       ;
-;     -- 4 input functions                    ; 1       ;
-;     -- <=3 input functions                  ; 43      ;
-;                                             ;         ;
-; Dedicated logic registers                   ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 38      ;
-;                                             ;         ;
-; Total DSP Blocks                            ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; P~input ;
-; Maximum fan-out                             ; 38      ;
-; Total fan-out                               ; 264     ;
-; Average fan-out                             ; 1.97    ;
-+---------------------------------------------+---------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 34               ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 58               ;
+;     -- 7 input functions                    ; 0                ;
+;     -- 6 input functions                    ; 10               ;
+;     -- 5 input functions                    ; 4                ;
+;     -- 4 input functions                    ; 1                ;
+;     -- <=3 input functions                  ; 43               ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 38               ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; PushButton~input ;
+; Maximum fan-out                             ; 38               ;
+; Total fan-out                               ; 264              ;
+; Average fan-out                             ; 1.97             ;
++---------------------------------------------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -221,22 +221,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; hex1[0]$latch                                       ; P                   ; yes                    ;
-; hex1[3]$latch                                       ; P                   ; yes                    ;
-; hex1[4]$latch                                       ; P                   ; yes                    ;
-; hex1[5]$latch                                       ; P                   ; yes                    ;
-; hex2[0]$latch                                       ; P                   ; yes                    ;
-; hex2[3]$latch                                       ; P                   ; yes                    ;
-; hex2[4]$latch                                       ; P                   ; yes                    ;
-; hex2[5]$latch                                       ; P                   ; yes                    ;
-; hex3[0]$latch                                       ; P                   ; yes                    ;
-; hex3[3]$latch                                       ; P                   ; yes                    ;
-; hex3[4]$latch                                       ; P                   ; yes                    ;
-; hex3[5]$latch                                       ; P                   ; yes                    ;
-; hex4[0]$latch                                       ; P                   ; yes                    ;
-; hex4[3]$latch                                       ; P                   ; yes                    ;
-; hex4[4]$latch                                       ; P                   ; yes                    ;
-; hex4[5]$latch                                       ; P                   ; yes                    ;
+; hex1[1]$latch                                       ; PushButton          ; yes                    ;
+; hex1[2]$latch                                       ; PushButton          ; yes                    ;
+; hex1[3]$latch                                       ; PushButton          ; yes                    ;
+; hex1[6]$latch                                       ; PushButton          ; yes                    ;
+; hex2[1]$latch                                       ; PushButton          ; yes                    ;
+; hex2[2]$latch                                       ; PushButton          ; yes                    ;
+; hex2[3]$latch                                       ; PushButton          ; yes                    ;
+; hex2[6]$latch                                       ; PushButton          ; yes                    ;
+; hex3[1]$latch                                       ; PushButton          ; yes                    ;
+; hex3[2]$latch                                       ; PushButton          ; yes                    ;
+; hex3[3]$latch                                       ; PushButton          ; yes                    ;
+; hex3[6]$latch                                       ; PushButton          ; yes                    ;
+; hex4[1]$latch                                       ; PushButton          ; yes                    ;
+; hex4[2]$latch                                       ; PushButton          ; yes                    ;
+; hex4[3]$latch                                       ; PushButton          ; yes                    ;
+; hex4[6]$latch                                       ; PushButton          ; yes                    ;
 ; loadValue[0]                                        ; loadValue[0]        ; yes                    ;
 ; loadValue[1]                                        ; loadValue[0]        ; yes                    ;
 ; loadValue[2]                                        ; loadValue[0]        ; yes                    ;
@@ -352,14 +352,14 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Mar 23 10:39:44 2023
+    Info: Processing started: Thu Mar 23 17:18:15 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rgrewallab8verilog -c rgrewallab8verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file rgrewallab8verilog.v
     Info (12023): Found entity 1: rgrewallab8verilog File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 1
 Info (12127): Elaborating entity "rgrewallab8verilog" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at rgrewallab8verilog.v(12): variable "P" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at rgrewallab8verilog.v(12): variable "PushButton" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 12
 Warning (10235): Verilog HDL Always Construct warning at rgrewallab8verilog.v(14): variable "count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 14
 Warning (10235): Verilog HDL Always Construct warning at rgrewallab8verilog.v(20): variable "loadValue" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 20
 Warning (10235): Verilog HDL Always Construct warning at rgrewallab8verilog.v(26): variable "loadValue" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 26
@@ -368,72 +368,72 @@ Warning (10240): Verilog HDL Always Construct warning at rgrewallab8verilog.v(11
 Warning (10240): Verilog HDL Always Construct warning at rgrewallab8verilog.v(11): inferring latch(es) for variable "hex2", which holds its previous value in one or more paths through the always construct File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 11
 Warning (10240): Verilog HDL Always Construct warning at rgrewallab8verilog.v(11): inferring latch(es) for variable "hex3", which holds its previous value in one or more paths through the always construct File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 11
 Warning (10240): Verilog HDL Always Construct warning at rgrewallab8verilog.v(11): inferring latch(es) for variable "hex4", which holds its previous value in one or more paths through the always construct File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 11
-Info (10041): Inferred latch for "hex4[0]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[1]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[2]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[3]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[4]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[5]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex4[6]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[0]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[1]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[2]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[3]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[4]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[5]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex3[6]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[0]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[1]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[2]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[3]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[4]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[5]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex2[6]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[0]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[1]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[2]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[3]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[4]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[5]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "hex1[6]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "loadValue[0]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "loadValue[1]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "loadValue[2]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Info (10041): Inferred latch for "loadValue[3]" at rgrewallab8verilog.v(45) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+Info (10041): Inferred latch for "hex4[0]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[1]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[2]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[3]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[4]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[5]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex4[6]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[0]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[1]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[2]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[3]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[4]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[5]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex3[6]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[0]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[1]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[2]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[3]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[4]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[5]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex2[6]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[0]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[1]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[2]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[3]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[4]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[5]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "hex1[6]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "loadValue[0]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "loadValue[1]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "loadValue[2]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Info (10041): Inferred latch for "loadValue[3]" at rgrewallab8verilog.v(48) File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "hex1[5]$latch" merged with LATCH primitive "hex1[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex1[4]$latch" merged with LATCH primitive "hex1[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex1[3]$latch" merged with LATCH primitive "hex1[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex2[5]$latch" merged with LATCH primitive "hex2[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex2[4]$latch" merged with LATCH primitive "hex2[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex2[3]$latch" merged with LATCH primitive "hex2[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex3[5]$latch" merged with LATCH primitive "hex3[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex3[4]$latch" merged with LATCH primitive "hex3[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex3[3]$latch" merged with LATCH primitive "hex3[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex4[5]$latch" merged with LATCH primitive "hex4[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex4[4]$latch" merged with LATCH primitive "hex4[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Info (13026): Duplicate LATCH primitive "hex4[3]$latch" merged with LATCH primitive "hex4[0]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-Warning (13012): Latch loadValue[0] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+    Info (13026): Duplicate LATCH primitive "hex1[6]$latch" merged with LATCH primitive "hex1[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex1[3]$latch" merged with LATCH primitive "hex1[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex1[2]$latch" merged with LATCH primitive "hex1[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex2[6]$latch" merged with LATCH primitive "hex2[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex2[3]$latch" merged with LATCH primitive "hex2[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex2[2]$latch" merged with LATCH primitive "hex2[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex3[6]$latch" merged with LATCH primitive "hex3[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex3[3]$latch" merged with LATCH primitive "hex3[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex3[2]$latch" merged with LATCH primitive "hex3[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex4[6]$latch" merged with LATCH primitive "hex4[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex4[3]$latch" merged with LATCH primitive "hex4[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Info (13026): Duplicate LATCH primitive "hex4[2]$latch" merged with LATCH primitive "hex4[1]$latch" File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+Warning (13012): Latch loadValue[0] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal choice[1] File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 2
-Warning (13012): Latch loadValue[1] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+Warning (13012): Latch loadValue[1] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal choice[1] File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 2
-Warning (13012): Latch loadValue[2] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+Warning (13012): Latch loadValue[2] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal choice[1] File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 2
-Warning (13012): Latch loadValue[3] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+Warning (13012): Latch loadValue[3] has unsafe behavior File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal choice[1] File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 2
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hex1[1]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex1[2]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex1[6]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex2[1]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex2[2]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex2[6]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex3[1]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex3[2]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex3[6]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex4[1]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex4[2]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
-    Warning (13410): Pin "hex4[6]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 45
+    Warning (13410): Pin "hex1[0]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex1[4]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex1[5]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex2[0]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex2[4]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex2[5]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex3[0]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex3[4]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex3[5]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex4[0]" is stuck at VCC File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex4[4]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
+    Warning (13410): Pin "hex4[5]" is stuck at GND File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 8/Verilog/rgrewallab8verilog.v Line: 48
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -442,9 +442,9 @@ Info (21057): Implemented 96 device resources after synthesis - the final resour
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 58 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Thu Mar 23 10:39:57 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Thu Mar 23 17:18:29 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
