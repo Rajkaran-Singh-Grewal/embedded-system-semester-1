@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at rgrewallab9Verilog.v(24): always construct contains both blocking and non-blocking assignments File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 9/Verilog/rgrewallab9Verilog.v Line: 24
+Warning (10268): Verilog HDL information at rgrewallab9Verilog.v(44): always construct contains both blocking and non-blocking assignments File: C:/Embedded Systems/Semester 1/Digital Design Principles/Labs/Lab 9/Verilog/rgrewallab9Verilog.v Line: 44
