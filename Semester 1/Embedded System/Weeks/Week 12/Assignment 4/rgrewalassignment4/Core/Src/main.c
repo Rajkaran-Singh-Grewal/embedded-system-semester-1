@@ -63,6 +63,10 @@ enum pushButton{
 	ok,
 	cancel
 };
+enum bankResponse{
+  cancel,
+  ok
+};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -166,10 +170,16 @@ void displayChequingOrSaving(){
   snprintf(stringBuffer,32,"Chequing Or Saving\r\n");
   ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
 }
-voie displayTransactionCancel(){
+void displayTransactionCancel(){
   char stringBuffer[32];
   ssd1331_clear_screen(BLACK);
   snprintf(stringBuffer,32,"Transaction Cancelled\r\n");
+  ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
+}
+void displayEnterPin(){
+  char stringBuffer[16];
+  ssd1331_clear_screen(BLACK);
+  snprintf(stringBuffer, 16,"Enter PIN....\r\n");
   ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
 }
 float checkIfAmountRecord(){
@@ -189,6 +199,24 @@ enum pushButton checkOkOrCancel(){
 		return ok;
 	}
 	return none;
+}
+enum bankResponse BankResponse(uint8_t pin){
+  if(pin == 1234){
+    return ok;
+  }else{
+    return cancel;
+  }
+}
+void printReciet(float amount){
+  printf("Shopping Center\r\n");
+  printf("***********************\r\n");
+  printf("Date: 2023-04-01\r\r TIME: 00:00:00\r\n");
+  printf("TOTAL CAD $%f\r\n",amount);
+  printf("Approved - Thank You\r\n");
+  printf("NO SIGNITURE TRANSACTION\r\n");
+  printf("-- IMPORTANT --\r\n");
+  printf("Retain This Copy For Your Records\r\n");
+  printf("-- Customer Copy --\r\n");
 }
 enum pushButton checkChequingOrSavingPressed(){
   if(deBounceReadPin(chequingPbPin, 'A', 10) == 0){
@@ -241,8 +269,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ssd1331_init();
   pushButtonInit();
-  displayWelcome();
+  //displayWelcome();
   int8_t transactionState = 1;
+  uint8_t pin = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -256,6 +285,7 @@ int main(void)
 	enum pushButton pbPressed = none;
 	switch(transactionState){
 	case 1:
+    displayWelcome();
 		amount = checkIfAmountRecord();
 		if(amount != 0){
 			displayAmount(amount);
@@ -282,9 +312,15 @@ int main(void)
       if(pbPressed == chequing){
         printf("Chequing Pressed\r\n");
         transactionState = 4;
+        displayEnterPin();
+        printf("Enter Pin ....\r\n");
+        scanf("%d",&pin);
       }else if(pbPressed == savings){
         printf("Saving Pressed\r\n");
         transactionState = 4;
+        displayEnterPin();
+        printf("Enter Pin ....\r\n");
+        scanf("%d",&pin);
       }else if(pbPressed == cancel){
         printf("Cancel Pressed\r\n");
         transactionState = 6;
@@ -292,12 +328,29 @@ int main(void)
     }
 		break;
 	case 4:
-
+    pbPressed = checkOkOrCancel();
+    if(pbPressed != none){
+      if(pbPressed == cancel){
+        printf("Cancel Pressed\r\n");
+        transactionState = 6;
+      }else if(pbPressed == ok){
+        printf("Ok Pressed\r\n");
+        transactionState = 5;
+      }
+    }
 		break;
 	case 5:
+    enum bankResponse response = BankResponse(pin);
+    if(response == ok){
+      printReciet(amount);
+      transactionState = 1;
+    }else if(response == cancel){
+      transactionState = 6;
+    }
 		break;
 	case 6:
     displayTransactionCancel();
+    HAL_Delay(1000);
     transactionState = 1;
 		break;
 	default:
