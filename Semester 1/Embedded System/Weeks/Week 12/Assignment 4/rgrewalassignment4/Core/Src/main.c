@@ -160,6 +160,18 @@ void displayAmount(float amount){
 	snprintf(stringBuffer,16, "$%.2f", amount);
 	ssd1331_display_string(0,0, stringBuffer, FONT_1206, WHITE);
 }
+void displayChequingOrSaving(){
+  char stringBuffer[32];
+  ssd1331_clear_screen(BLACK);
+  snprintf(stringBuffer,32,"Chequing Or Saving\r\n");
+  ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
+}
+voie displayTransactionCancel(){
+  char stringBuffer[32];
+  ssd1331_clear_screen(BLACK);
+  snprintf(stringBuffer,32,"Transaction Cancelled\r\n");
+  ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
+}
 float checkIfAmountRecord(){
 	float debitAmount = 0;
 	int16_t result = 0;
@@ -177,6 +189,16 @@ enum pushButton checkOkOrCancel(){
 		return ok;
 	}
 	return none;
+}
+enum pushButton checkChequingOrSavingPressed(){
+  if(deBounceReadPin(chequingPbPin, 'A', 10) == 0){
+    return chequing;
+  }else if(deBounceReadPin(savingsPbPin, 'A',10) == 0){
+    return savings;
+  }else if(deBounceReadPin(cancelPbPin,'A',10) == 0){
+    return cancel;
+  }
+  return none;
 }
 void displayOkCancel(){
 	char stringBuffer[16];
@@ -246,20 +268,37 @@ int main(void)
 		if(pbPressed != none){
 			if(pbPressed == cancel){
 				printf("Cancel Pressed\r\n");
-				transactionState = 1;
+				transactionState = 6;
 			}else if(pbPressed == ok){
 				printf("OK Pressed\r\n");
 				transactionState = 3;
+        displayChequingOrSaving();
 			}
 		}
 		break;
 	case 3:
+    pbPressed = checkChequingOrSavingPressed();
+    if(pbPressed != none){
+      if(pbPressed == chequing){
+        printf("Chequing Pressed\r\n");
+        transactionState = 4;
+      }else if(pbPressed == savings){
+        printf("Saving Pressed\r\n");
+        transactionState = 4;
+      }else if(pbPressed == cancel){
+        printf("Cancel Pressed\r\n");
+        transactionState = 6;
+      }
+    }
 		break;
 	case 4:
+
 		break;
 	case 5:
 		break;
 	case 6:
+    displayTransactionCancel();
+    transactionState = 1;
 		break;
 	default:
 		break;
