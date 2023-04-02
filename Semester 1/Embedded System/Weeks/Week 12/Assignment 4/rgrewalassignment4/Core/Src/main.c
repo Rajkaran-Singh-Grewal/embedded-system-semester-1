@@ -64,8 +64,8 @@ enum pushButton{
 	cancel
 };
 enum bankResponse{
-  cancel,
-  ok
+  denied,
+  confirm
 };
 /* USER CODE END PV */
 
@@ -82,7 +82,7 @@ static void MX_SPI1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void setTone(int32_t frequency){
-	int32_t pwmPeriod = 1_000_000_000 / (frequency * 250);
+	int32_t pwmPeriod = 1000000000 / (frequency * 250);
 	TIM_MasterConfigTypeDef sMasterConfig;
 	TIM_OC_InitTypeDef sConfigOC;
 	TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig;
@@ -158,11 +158,20 @@ void pushButtonInit(){
 	deBounceInit(okPbPin, 'A',1);
 	deBounceInit(cancelPbPin,'A',1);
 }
+void displayWelcome(void) {
+	char stringBuffer[16] = { 0 };
+
+	ssd1331_clear_screen(BLACK);
+	snprintf(stringBuffer, 16, "Welcome ");
+	ssd1331_display_string(0, 0, stringBuffer, FONT_1206, WHITE);
+	printf("%s\r\n",stringBuffer);
+}
 void displayAmount(float amount){
 	char stringBuffer[16];
 	ssd1331_clear_screen(BLACK);
 	snprintf(stringBuffer,16, "$%.2f", amount);
 	ssd1331_display_string(0,0, stringBuffer, FONT_1206, WHITE);
+  printf("%f\r\n",amount);
 }
 void displayChequingOrSaving(){
   char stringBuffer[32];
@@ -202,9 +211,9 @@ enum pushButton checkOkOrCancel(){
 }
 enum bankResponse BankResponse(uint8_t pin){
   if(pin == 1234){
-    return ok;
+    return confirm;
   }else{
-    return cancel;
+    return denied;
   }
 }
 void printReciet(float amount){
@@ -272,6 +281,7 @@ int main(void)
   //displayWelcome();
   int8_t transactionState = 1;
   uint8_t pin = 0;
+  printf("Starting Program\r\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -283,18 +293,20 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	float amount = 0;
 	enum pushButton pbPressed = none;
+	enum bankResponse bankResponse = denied;
 	switch(transactionState){
 	case 1:
-    displayWelcome();
+		displayWelcome();
 		amount = checkIfAmountRecord();
 		if(amount != 0){
 			displayAmount(amount);
 			displayOkCancel();
 			transactionState = 2;
 		}
+		printf("%f\r\n",amount);
 		break;
 	case 2:
-		pbPressed = checkOkCancel();
+		pbPressed = checkOkOrCancel();
 		if(pbPressed != none){
 			if(pbPressed == cancel){
 				printf("Cancel Pressed\r\n");
@@ -340,11 +352,11 @@ int main(void)
     }
 		break;
 	case 5:
-    enum bankResponse response = BankResponse(pin);
-    if(response == ok){
+    bankResponse = BankResponse(pin);
+    if(bankResponse == confirm){
       printReciet(amount);
       transactionState = 1;
-    }else if(response == cancel){
+    }else if(bankResponse == denied){
       transactionState = 6;
     }
 		break;
@@ -583,6 +595,22 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : PA5 PA12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PA7 */
+  GPIO_InitStruct.Pin = GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD3_Pin SSD1331_CS_Pin SSD1331_DC_Pin SSD1331_RES_Pin */
   GPIO_InitStruct.Pin = LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin;

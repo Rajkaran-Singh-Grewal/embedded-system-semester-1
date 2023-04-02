@@ -18,7 +18,7 @@
  * If no LICENSE file comes with this software, it is provided AS-IS.
  *
  ******************************************************************************
- */
+*/
 
 /* Includes */
 #include <sys/stat.h>
@@ -30,11 +30,19 @@
 #include <sys/time.h>
 #include <sys/times.h>
 
+#include "main.h"				// added to get vcp to work as stdin/stdout
+#ifndef HAL_OK
+#include "stm32l4xx_hal.h"
+#endif
+
 
 /* Variables */
+//#undef errno
+extern int errno;
 extern int __io_putchar(int ch) __attribute__((weak));
 extern int __io_getchar(void) __attribute__((weak));
 
+register char * stack_ptr asm("sp");
 
 char *__env[1] = { 0 };
 char **environ = __env;
@@ -47,130 +55,126 @@ void initialise_monitor_handles()
 
 int _getpid(void)
 {
-  return 1;
+	return 1;
 }
 
 int _kill(int pid, int sig)
 {
-  (void)pid;
-  (void)sig;
-  errno = EINVAL;
-  return -1;
+	errno = EINVAL;
+	return -1;
 }
 
 void _exit (int status)
 {
-  _kill(status, -1);
-  while (1) {}    /* Make sure we hang here */
+	_kill(status, -1);
+	while (1) {}		/* Make sure we hang here */
 }
 
-__attribute__((weak)) int _read(int file, char *ptr, int len)
+int _read (int file, char *ptr, int len)
 {
-  (void)file;
-  int DataIdx;
+	// code commented out to implement vcp as stdin
+//	int DataIdx;
+//
+//	for (DataIdx = 0; DataIdx < len; DataIdx++)
+//	{
+//		*ptr++ = __io_getchar();
+//	}
 
-  for (DataIdx = 0; DataIdx < len; DataIdx++)
-  {
-    *ptr++ = __io_getchar();
-  }
+	// Conestoga College implemented change to cause VCP to be used for stdin
+	extern UART_HandleTypeDef huart2;
 
-  return len;
+	int returnVal= 0;
+	len = 1;						// over ride the read and only get 1 char
+
+	returnVal = HAL_UART_Receive(&huart2, (uint8_t *)ptr, len, 0xffffffff);
+	if( returnVal == HAL_OK )
+		return len;
+	else if( returnVal == HAL_TIMEOUT )
+		return 0;
+	else
+		return EOF;
+
 }
 
-__attribute__((weak)) int _write(int file, char *ptr, int len)
-{
-  (void)file;
-  int DataIdx;
+int _write(int file, char *ptr, int len){
+	extern UART_HandleTypeDef huart2;
+	HAL_StatusTypeDef result = HAL_OK;
+	result = HAL_UART_Transmit(&huart2, (uint8_t *)ptr, len, HAL_MAX_DELAY);
+	if(result == HAL_ERROR || result == HAL_BUSY)
+	{
+		Error_Handler();
+	}
 
-  for (DataIdx = 0; DataIdx < len; DataIdx++)
-  {
-    __io_putchar(*ptr++);
-  }
-  return len;
+	return len;
 }
+
+
 
 int _close(int file)
 {
-  (void)file;
-  return -1;
+	return -1;
 }
 
 
 int _fstat(int file, struct stat *st)
 {
-  (void)file;
-  st->st_mode = S_IFCHR;
-  return 0;
+	st->st_mode = S_IFCHR;
+	return 0;
 }
 
 int _isatty(int file)
 {
-  (void)file;
-  return 1;
+	return 1;
 }
 
 int _lseek(int file, int ptr, int dir)
 {
-  (void)file;
-  (void)ptr;
-  (void)dir;
-  return 0;
+	return 0;
 }
 
 int _open(char *path, int flags, ...)
 {
-  (void)path;
-  (void)flags;
-  /* Pretend like we always fail */
-  return -1;
+	/* Pretend like we always fail */
+	return -1;
 }
 
 int _wait(int *status)
 {
-  (void)status;
-  errno = ECHILD;
-  return -1;
+	errno = ECHILD;
+	return -1;
 }
 
 int _unlink(char *name)
 {
-  (void)name;
-  errno = ENOENT;
-  return -1;
+	errno = ENOENT;
+	return -1;
 }
 
 int _times(struct tms *buf)
 {
-  (void)buf;
-  return -1;
+	return -1;
 }
 
 int _stat(char *file, struct stat *st)
 {
-  (void)file;
-  st->st_mode = S_IFCHR;
-  return 0;
+	st->st_mode = S_IFCHR;
+	return 0;
 }
 
 int _link(char *old, char *new)
 {
-  (void)old;
-  (void)new;
-  errno = EMLINK;
-  return -1;
+	errno = EMLINK;
+	return -1;
 }
 
 int _fork(void)
 {
-  errno = EAGAIN;
-  return -1;
+	errno = EAGAIN;
+	return -1;
 }
 
 int _execve(char *name, char **argv, char **env)
 {
-  (void)name;
-  (void)argv;
-  (void)env;
-  errno = ENOMEM;
-  return -1;
+	errno = ENOMEM;
+	return -1;
 }

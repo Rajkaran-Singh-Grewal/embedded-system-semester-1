@@ -90,7 +90,7 @@ extern void ssd1331_draw_bitmap(uint8_t chXpos,
 								uint8_t chWidth,
 								uint8_t chHeight,
 								uint16_t hwColor);
-extern void ssd1331_clear_screen(uint16_5 hwColor);
+extern void ssd1331_clear_screen(uint16_t hwColor);
 extern void ssd1331_init();
 
 #endif /* INC_SSD1331_H_ */
