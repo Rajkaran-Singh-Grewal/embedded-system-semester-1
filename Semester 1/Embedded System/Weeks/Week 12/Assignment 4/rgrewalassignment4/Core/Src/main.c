@@ -160,18 +160,15 @@ void pushButtonInit(){
 }
 void displayWelcome(void) {
 	char stringBuffer[16] = { 0 };
-
 	ssd1331_clear_screen(BLACK);
 	snprintf(stringBuffer, 16, "Welcome ");
 	ssd1331_display_string(0, 0, stringBuffer, FONT_1206, WHITE);
-	printf("%s\r\n",stringBuffer);
 }
 void displayAmount(float amount){
 	char stringBuffer[16];
 	ssd1331_clear_screen(BLACK);
 	snprintf(stringBuffer,16, "$%.2f", amount);
 	ssd1331_display_string(0,0, stringBuffer, FONT_1206, WHITE);
-  printf("%f\r\n",amount);
 }
 void displayChequingOrSaving(){
   char stringBuffer[32];
@@ -182,7 +179,7 @@ void displayChequingOrSaving(){
 void displayTransactionCancel(){
   char stringBuffer[32];
   ssd1331_clear_screen(BLACK);
-  snprintf(stringBuffer,32,"Transaction Cancelled\r\n");
+  snprintf(stringBuffer,32,"Transaction Cancelled ");
   ssd1331_display_string(0,0,stringBuffer,FONT_1206,WHITE);
 }
 void displayEnterPin(){
@@ -209,7 +206,7 @@ enum pushButton checkOkOrCancel(){
 	}
 	return none;
 }
-enum bankResponse BankResponse(uint8_t pin){
+enum bankResponse BankResponse(uint pin){
   if(pin == 1234){
     return confirm;
   }else{
@@ -217,15 +214,18 @@ enum bankResponse BankResponse(uint8_t pin){
   }
 }
 void printReciet(float amount){
-  printf("Shopping Center\r\n");
-  printf("***********************\r\n");
-  printf("Date: 2023-04-01\r\r TIME: 00:00:00\r\n");
-  printf("TOTAL CAD $%f\r\n",amount);
-  printf("Approved - Thank You\r\n");
-  printf("NO SIGNITURE TRANSACTION\r\n");
-  printf("-- IMPORTANT --\r\n");
-  printf("Retain This Copy For Your Records\r\n");
-  printf("-- Customer Copy --\r\n");
+	printf("\n\n\n");
+	printf("***********************\r\n");
+	printf("Shopping Center\r\n");
+	printf("***********************\r\n");
+	printf("Date: 2023-04-01\r\r TIME: 00:00:00\r\n");
+	printf("TOTAL CAD $%f \r\n",amount);
+	printf("Approved - Thank You\r\n");
+	printf("NO SIGNITURE TRANSACTION\r\n");
+	printf("-- IMPORTANT --\r\n");
+	printf("Retain This Copy For Your Records\r\n");
+	printf("-- Customer Copy --\r\n");
+	printf("\n\n\n");
 }
 enum pushButton checkChequingOrSavingPressed(){
   if(deBounceReadPin(chequingPbPin, 'A', 10) == 0){
@@ -241,6 +241,12 @@ void displayOkCancel(){
 	char stringBuffer[16];
 	snprintf(stringBuffer, 16,"Ok or Cancel?");
 	ssd1331_display_string(0,10, stringBuffer, FONT_1206, WHITE);
+}
+void displayWrongPin(){
+	char stringBuffer[32];
+	ssd1331_clear_screen(BLACK);
+	snprintf(stringBuffer, 32, "You have Enter The Wrong Pin!");
+	ssd1331_display_string(0,10,stringBuffer,FONT_1206, RED);
 }
 /* USER CODE END 0 */
 
@@ -280,7 +286,8 @@ int main(void)
   pushButtonInit();
   //displayWelcome();
   int8_t transactionState = 1;
-  uint8_t pin = 0;
+  uint pin = 0;
+  float amount = 0;
   printf("Starting Program\r\n");
   /* USER CODE END 2 */
 
@@ -291,7 +298,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	float amount = 0;
 	enum pushButton pbPressed = none;
 	enum bankResponse bankResponse = denied;
 	switch(transactionState){
@@ -303,7 +309,7 @@ int main(void)
 			displayOkCancel();
 			transactionState = 2;
 		}
-		printf("%f\r\n",amount);
+		printf("%f \r\n",amount);
 		break;
 	case 2:
 		pbPressed = checkOkOrCancel();
@@ -314,56 +320,61 @@ int main(void)
 			}else if(pbPressed == ok){
 				printf("OK Pressed\r\n");
 				transactionState = 3;
-        displayChequingOrSaving();
+				displayChequingOrSaving();
 			}
 		}
 		break;
 	case 3:
-    pbPressed = checkChequingOrSavingPressed();
-    if(pbPressed != none){
-      if(pbPressed == chequing){
-        printf("Chequing Pressed\r\n");
-        transactionState = 4;
-        displayEnterPin();
-        printf("Enter Pin ....\r\n");
-        scanf("%d",&pin);
-      }else if(pbPressed == savings){
-        printf("Saving Pressed\r\n");
-        transactionState = 4;
-        displayEnterPin();
-        printf("Enter Pin ....\r\n");
-        scanf("%d",&pin);
-      }else if(pbPressed == cancel){
-        printf("Cancel Pressed\r\n");
-        transactionState = 6;
-      }
-    }
+		pbPressed = checkChequingOrSavingPressed();
+		if(pbPressed != none){
+			if(pbPressed == chequing){
+				printf("Chequing Pressed\r\n");
+				transactionState = 4;
+				displayEnterPin();
+				scanf("%d",&pin);
+				displayOkCancel();
+			}else if(pbPressed == savings){
+				printf("Saving Pressed\r\n");
+				transactionState = 4;
+				displayEnterPin();
+				scanf("%d",&pin);
+				displayOkCancel();
+			}else if(pbPressed == cancel){
+				printf("Cancel Pressed\r\n");
+				transactionState = 6;
+			}
+		}
 		break;
 	case 4:
-    pbPressed = checkOkOrCancel();
-    if(pbPressed != none){
-      if(pbPressed == cancel){
-        printf("Cancel Pressed\r\n");
-        transactionState = 6;
-      }else if(pbPressed == ok){
-        printf("Ok Pressed\r\n");
-        transactionState = 5;
-      }
-    }
+		pbPressed = checkOkOrCancel();
+		if(pbPressed != none){
+			if(pbPressed == cancel){
+				printf("Cancel Pressed\r\n");
+				transactionState = 6;
+			}else if(pbPressed == ok){
+				printf("Ok Pressed\r\n");
+				transactionState = 5;
+			}
+		}
 		break;
 	case 5:
-    bankResponse = BankResponse(pin);
-    if(bankResponse == confirm){
-      printReciet(amount);
-      transactionState = 1;
-    }else if(bankResponse == denied){
-      transactionState = 6;
-    }
+		bankResponse = BankResponse(pin);
+    	if(bankResponse == confirm){
+    		printReciet(amount);
+    		ssd1331_display_string(0,0,"Thank you for Shopping With Us",FONT_1206,WHITE);
+    		HAL_Delay(100);
+    		transactionState = 1;
+    	}else if(bankResponse == denied){
+    		printf("Enter wrong Pin\r\n");
+    		displayWrongPin();
+    		HAL_Delay(100);
+    		transactionState = 6;
+    	}
 		break;
 	case 6:
-    displayTransactionCancel();
-    HAL_Delay(1000);
-    transactionState = 1;
+		displayTransactionCancel();
+		HAL_Delay(1000);
+		transactionState = 1;
 		break;
 	default:
 		break;
@@ -595,6 +606,12 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : chequing_Pin saving_Pin Ok_Pin Cancel_Pin */
+  GPIO_InitStruct.Pin = chequing_Pin|saving_Pin|Ok_Pin|Cancel_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA5 PA12 */
   GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_12;
