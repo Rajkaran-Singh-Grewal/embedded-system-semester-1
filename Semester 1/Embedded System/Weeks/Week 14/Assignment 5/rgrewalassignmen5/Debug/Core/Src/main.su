@@ -1,0 +1,12 @@
+../Core/Src/main.c:122:6:unitTest	224	static
+../Core/Src/main.c:149:9:gpsParser	264	static
+../Core/Src/main.c:319:6:displayStrings	968	static
+../Core/Src/main.c:516:6:pushButtonInit	8	static
+../Core/Src/main.c:519:6:displayWelcome	32	static
+../Core/Src/main.c:532:5:main	96	static
+../Core/Src/main.c:591:6:SystemClock_Config	96	static
+../Core/Src/main.c:652:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:692:13:MX_TIM1_Init	96	static
+../Core/Src/main.c:762:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:797:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:852:6:Error_Handler	4	static,ignoring_inline_asm

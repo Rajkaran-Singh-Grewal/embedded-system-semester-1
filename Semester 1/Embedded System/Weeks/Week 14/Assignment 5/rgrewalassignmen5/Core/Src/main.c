@@ -25,6 +25,12 @@
 #include "stdint.h"
 #include "string.h"
 #include "stdlib.h"
+
+
+#include "debounce.h"
+#include "ssd1331.h"
+#include "fonts.h"
+#include "unistd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,17 +83,34 @@ typedef struct GPSDATA{
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-UART_HandleTypeDef huart2;
 SPI_HandleTypeDef hspi1;
+
 TIM_HandleTypeDef htim1;
+
+UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN PV */
 static const int16_t pushPin = 0;
+
+enum pushButton{
+	none,
+	chequing,
+	savings,
+	ok,
+	cancel
+};
+enum bankResponse{
+  denied,
+  confirm
+};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_TIM1_Init(void);
+static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 void unitTest(void);
 uint8_t gpsParser(char*, uint8_t);
@@ -135,6 +158,7 @@ uint8_t gpsParser(char *string,uint8_t len){
           tempString[j] = *string++;
           j++;
         }
+        tempString[j] = '\0';
         for(int k = 0; k < j;k++){
           string--;
         }
@@ -344,7 +368,7 @@ void displayStrings(GPSDATA gpsdata){
   char geoidSeperationString[64];
   snprintf(geoidSeperationString,64,"Geoid Seperation %d",atoi(&gpsdata.geoidSeperation));
   char inMetersString[64];
-  snprintf(inMetersString,64,"In Meters");
+  snprintf(inMetersString,64,"In Meters %c",gpsdata.inMeters);
   char dgpsAgeString[64];
   if(gpsdata.ageOfDGPSDataInSeconds == 'X'){
     snprintf(dgpsAgeString,64,"DGPS Age: %d Age of DGPS data in seconds",0);
@@ -357,87 +381,148 @@ void displayStrings(GPSDATA gpsdata){
   long checkSum = strtoul(gpsdata.checkSum,&ptr,10);
   snprintf(checkSumString,64,"Checksum: = %lu",checkSum);
   uint8_t continueFlag = 1;
+  uint8_t state = 0;
   while(continueFlag){
     if(deBounceReadPin(pushPin,'A',10) == 0){
-      printf("%s\n",sentenceIdString);
+      HAL_Delay(100);
+    if(state == 0){
+      printf("%s\r\n",sentenceIdString);
       ssd1331_clear_screen(BLACK);
       ssd1331_display_string(0,10,sentenceIdString,FONT_1206,WHITE);
-      if(deBounceReadPin(pushPin, 'A',10) == 0){
-        printf("%s\n",utcTimeString);
+      state = 1;
+      continue;
+    	}
+      if(state == 1){
+        printf("%s\r\n",utcTimeString);
         ssd1331_clear_screen(BLACK);
         ssd1331_display_string(0,10,utcTimeString,FONT_1206,WHITE);
-        if(deBounceReadPin(pushPin,'A',10) == 0){
-          printf("%s\n",latitudeString);
+        state = 2;
+        continue;
+      }
+        if(state == 2){
+          printf("%s\r\n",latitudeString);
           ssd1331_clear_screen(BLACK);
           ssd1331_display_string(0,10,latitudeString,FONT_1206,WHITE);
-          if(deBounceReadPin(pushPin,'A',10) == 0){
-            printf("%s\n",latitudeMeasureString);
+          state = 3;
+          continue;
+        }
+          if(state == 3){
+            printf("%s\r\n",latitudeMeasureString);
             ssd1331_clear_screen(BLACK);
-            ssd1331_display_screen(0,10,latitudeMeasureString,FONT_1206,WHITE);
-            if(deBounceReadPin(pushPin,'A',10) == 0){
-              printf("%s\n",longitudeString);
+            ssd1331_display_string(0,10,latitudeMeasureString,FONT_1206,WHITE);
+            state = 4;
+            continue;
+          }
+            if(state == 4){
+              printf("%s\r\n",longitudeString);
               ssd1331_clear_screen(BLACK);
               ssd1331_display_string(0,10,longitudeString,FONT_1206,WHITE);
-              if(deBounceReadPin(pushPin,'A',10) == 0){
-                printf("%s\n",longitudeMeasureString);
+              state = 5;
+              continue;
+            }
+              if(state == 5){
+                printf("%s\r\n",longitudeMeasureString);
                 ssd1331_clear_screen(BLACK);
                 ssd1331_display_string(0,10,longitudeMeasureString,FONT_1206,WHITE);
-                if(deBounceReadPin(pushPin,'A',10) == 0){
-                  printf("%s\n",positionFixString);
+                state = 6;
+                continue;
+              }
+                if(state == 6){
+                  printf("%s\r\n",positionFixString);
                   ssd1331_clear_screen(BLACK);
                   ssd1331_display_string(0,10,positionFixString,FONT_1206,WHITE);
-                  if(deBounceReadPin(pushPin,'A',10) == 0){
-                    printf("%s\n",satellitesUsedString);
+                  state = 7;
+                  continue;
+                }
+                  if(state == 7){
+                    printf("%s\r\n",satellitesUsedString);
                     ssd1331_clear_screen(BLACK);
                     ssd1331_display_string(0,10,satellitesUsedString,FONT_1206,WHITE);
-                    if(deBounceReadPin(pushPin,'A',10) == 0){
-                      printf("%s\n",horizontalDilutionOfPrecisionString);
+                    state = 8;
+                    continue;
+                  }
+                    if(state == 8){
+                      printf("%s\r\n",horizontalDilutionOfPrecisionString);
                       ssd1331_clear_screen(BLACK);
                       ssd1331_display_string(0,10,horizontalDilutionOfPrecisionString,FONT_1206,WHITE);
-                      if(deBounceReadPin(pushPin,'A',10) == 0){
-                        printf("%s\n",altitudeString);
+                      state = 9;
+                      continue;
+                    }
+                      if(state == 9){
+                        printf("%s\r\n",altitudeString);
                         ssd1331_clear_screen(BLACK);
-                        ssd1331_display_string(0,10,altitudeString,FONT_1206,WHITE);
-                        if(deBounceReadPin(pushPin,'A',10) == 0){
-                          printf("%s\n",altitudeUnitsString);
+                        ssd1331_display_string(0,0,altitudeString,FONT_1206,WHITE);
+                        state = 10;
+                        continue;
+                      }
+                        if(state == 10){
+                          printf("%s\r\n",altitudeUnitsString);
                           ssd1331_clear_screen(BLACK);
                           ssd1331_display_string(0,10,altitudeUnitsString,FONT_1206,WHITE);
-                          if(deBounceReadPin(pushPin,'A',10) == 0){
-                            printf("%s\n",geoidSeperationString);
+                          state = 11;
+                          continue;
+                        }
+                          if(state == 11){
+                            printf("%s\r\n",geoidSeperationString);
                             ssd1331_clear_screen(BLACK);
                             ssd1331_display_string(0,10,geoidSeperationString,FONT_1206,WHITE);
-                            if(deBounceReadPin(pushPin,'A',10) == 0){
-                              printf("%s\n",inMetersString);
+                            state = 12;
+                            continue;
+                          }
+                            if(state == 12){
+                              printf("%s\r\n",inMetersString);
                               ssd1331_clear_screen(BLACK);
                               ssd1331_display_string(0,10,inMetersString,FONT_1206,WHITE);
-                              if(deBounceReadPin(pushPin,'A',10) == 0){
-                                printf("%s\n",dgpsAgeString);
+                              state = 13;
+                              continue;
+                            }
+                              if(state == 13){
+                                printf("%s\r\n",dgpsAgeString);
                                 ssd1331_clear_screen(BLACK);
                                 ssd1331_display_string(0,10,dgpsAgeString,FONT_1206,WHITE);
-                                if(deBounceReadPin(pushPin,'A',10) == 0){
-                                  printf("%s\n",checkSumString);
+                                state = 14;
+                                continue;
+                              }
+                                if(state == 14){
+                                  printf("%s\r\n",checkSumString);
                                   ssd1331_clear_screen(BLACK);
                                   ssd1331_display_string(0,10,checkSumString,FONT_1206,WHITE);
-                                  continueFlag = 0;
+                                  state = 15;
+                                  continue;
                                 }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+                                if(state == 15){
+                                  ssd1331_clear_screen(BLACK);
+                                  ssd1331_display_string(0,0,"Finished Program",FONT_1206,WHITE);
+                                  continueFlag = 0;
+                                  state = 0;
+                                  continue;
+                                }
     }
   }
-  ssd1331_clear_screen(BLACK);
-  ssd1331_display_string(0,10,"Finish Program",FONT_1206,WHITE);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+void pushButtonInit(){
+	deBounceInit(pushPin, 'A', 1);
+}
+void displayWelcome(void) {
+	char stringBuffer[16] = { 0 };
+	ssd1331_clear_screen(BLACK);
+	snprintf(stringBuffer, 16, "Welcome ");
+	ssd1331_display_string(0, 0, stringBuffer, FONT_1206, WHITE);
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -469,23 +554,29 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_TIM1_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  pushButtonInit();
   ssd1331_init();
+  pushButtonInit();
+  displayWelcome();
+  printf("Starting Program\r\n");
   uint8_t testFlag = 1;
   /* USER CODE END 2 */
 
   /* Infinite loop */
-  char string[80];
   /* USER CODE BEGIN WHILE */
+  char string[80];
   while (testFlag == 0)
   {
     /* USER CODE END WHILE */
-    scanf("Please Print geo location string %s",&string);
-    
+
     /* USER CODE BEGIN 3 */
-    scanf("Please Enter geo-location string\r\n %s",&string);
-    gpsParser(string,(uint8_t)strlen(string));
+	printf("Please Print the geo location of string");
+	HAL_Delay(100);
+	scanf("%s",string);
+	printf("The String is %s\r\n",string);
+	gpsParser(string,(uint8_t)strlen(string));
   }
   if(testFlag == 1){
     unitTest();
@@ -554,6 +645,116 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 7;
+  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+
+  /* USER CODE END SPI1_Init 2 */
+
+}
+
+/**
+  * @brief TIM1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM1_Init(void)
+{
+
+  /* USER CODE BEGIN TIM1_Init 0 */
+
+  /* USER CODE END TIM1_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+
+  /* USER CODE BEGIN TIM1_Init 1 */
+
+  /* USER CODE END TIM1_Init 1 */
+  htim1.Instance = TIM1;
+  htim1.Init.Prescaler = 0;
+  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim1.Init.Period = 100;
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim1.Init.RepetitionCounter = 0;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+  sBreakDeadTimeConfig.BreakFilter = 0;
+  sBreakDeadTimeConfig.Break2State = TIM_BREAK2_DISABLE;
+  sBreakDeadTimeConfig.Break2Polarity = TIM_BREAK2POLARITY_HIGH;
+  sBreakDeadTimeConfig.Break2Filter = 0;
+  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+  if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM1_Init 2 */
+
+  /* USER CODE END TIM1_Init 2 */
+  HAL_TIM_MspPostInit(&htim1);
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -605,14 +806,36 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : LD3_Pin */
-  GPIO_InitStruct.Pin = LD3_Pin;
+  /*Configure GPIO pins : chequing_Pin saving_Pin Ok_Pin Cancel_Pin */
+  GPIO_InitStruct.Pin = chequing_Pin|saving_Pin|Ok_Pin|Cancel_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA5 PA12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PA7 */
+  GPIO_InitStruct.Pin = GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : LD3_Pin SSD1331_CS_Pin SSD1331_DC_Pin SSD1331_RES_Pin */
+  GPIO_InitStruct.Pin = LD3_Pin|SSD1331_CS_Pin|SSD1331_DC_Pin|SSD1331_RES_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LD3_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

@@ -1,0 +1,43 @@
+18:52:08 **** Incremental Build of configuration Debug for project rgrewalassignmen5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'gpsParser':
+../Core/Src/main.c:170:17: warning: assignment to 'char' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  170 |         *string = NULL;
+      |                 ^
+../Core/Src/main.c:191:25: warning: assignment to 'char' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  191 |   gpsdata.sentenceID[7] = NULL;
+      |                         ^
+../Core/Src/main.c:308:25: warning: assignment to 'char' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  308 |     gpsdata.checkSum[i] = NULL;
+      |                         ^
+../Core/Src/main.c:310:12: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+  310 |   if(token != '\0'){
+      |            ^~
+../Core/Src/main.c:310:6: note: did you mean to dereference the pointer?
+  310 |   if(token != '\0'){
+      |      ^
+../Core/Src/main.c: In function 'displayStrings':
+../Core/Src/main.c:361:64: warning: passing argument 1 of 'atoi' from incompatible pointer type [-Wincompatible-pointer-types]
+  361 |   snprintf(satellitesUsedString,64,"Satellites Used: %d", atoi(&gpsdata.satellitesUsed));
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                |
+      |                                                                char (*)[2]
+In file included from ../Core/Src/main.c:27:
+c:\st\stm32cubeide_1.11.2\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\stdlib.h:81:23: note: expected 'const char *' but argument is of type 'char (*)[2]'
+   81 | int atoi (const char *__nptr);
+      |           ~~~~~~~~~~~~^~~~~~
+arm-none-eabi-gcc -o "rgrewalassignmen5.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Embedded Systems\Semester 1\Embedded System\Weeks\Week 14\Assignment 5\rgrewalassignmen5\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rgrewalassignmen5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: rgrewalassignmen5.elf
+ 
+arm-none-eabi-size   rgrewalassignmen5.elf 
+arm-none-eabi-objdump -h -S  rgrewalassignmen5.elf  > "rgrewalassignmen5.list"
+   text	   data	    bss	    dec	    hex	filename
+  53624	    488	   1896	  56008	   dac8	rgrewalassignmen5.elf
+Finished building: default.size.stdout
+ 
+Finished building: rgrewalassignmen5.list
+ 
+
+18:52:18 Build Finished. 0 errors, 5 warnings. (took 9s.539ms)
+

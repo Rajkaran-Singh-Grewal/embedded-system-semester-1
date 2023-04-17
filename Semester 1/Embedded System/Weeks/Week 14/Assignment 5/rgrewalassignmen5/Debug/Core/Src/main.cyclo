@@ -1,0 +1,12 @@
+main.c:122:6:unitTest	4
+main.c:149:9:gpsParser	30
+main.c:319:6:displayStrings	26
+main.c:516:6:pushButtonInit	1
+main.c:519:6:displayWelcome	1
+main.c:532:5:main	3
+main.c:591:6:SystemClock_Config	4
+main.c:652:13:MX_SPI1_Init	2
+main.c:692:13:MX_TIM1_Init	5
+main.c:762:13:MX_USART2_UART_Init	2
+main.c:797:13:MX_GPIO_Init	1
+main.c:852:6:Error_Handler	1
