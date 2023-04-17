@@ -385,12 +385,12 @@ void displayStrings(GPSDATA gpsdata){
   while(continueFlag){
     if(deBounceReadPin(pushPin,'A',10) == 0){
       HAL_Delay(100);
-    if(state == 0){
-      printf("%s\r\n",sentenceIdString);
-      ssd1331_clear_screen(BLACK);
-      ssd1331_display_string(0,10,sentenceIdString,FONT_1206,WHITE);
-      state = 1;
-      continue;
+      if(state == 0){
+        printf("%s\r\n",sentenceIdString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,sentenceIdString,FONT_1206,WHITE);
+        state = 1;
+        continue;
     	}
       if(state == 1){
         printf("%s\r\n",utcTimeString);
@@ -399,123 +399,112 @@ void displayStrings(GPSDATA gpsdata){
         state = 2;
         continue;
       }
-        if(state == 2){
-          printf("%s\r\n",latitudeString);
-          ssd1331_clear_screen(BLACK);
-          ssd1331_display_string(0,10,latitudeString,FONT_1206,WHITE);
-          state = 3;
-          continue;
-        }
-          if(state == 3){
-            printf("%s\r\n",latitudeMeasureString);
-            ssd1331_clear_screen(BLACK);
-            ssd1331_display_string(0,10,latitudeMeasureString,FONT_1206,WHITE);
-            state = 4;
-            continue;
-          }
-            if(state == 4){
-              printf("%s\r\n",longitudeString);
-              ssd1331_clear_screen(BLACK);
-              ssd1331_display_string(0,10,longitudeString,FONT_1206,WHITE);
-              state = 5;
-              continue;
-            }
-              if(state == 5){
-                printf("%s\r\n",longitudeMeasureString);
-                ssd1331_clear_screen(BLACK);
-                ssd1331_display_string(0,10,longitudeMeasureString,FONT_1206,WHITE);
-                state = 6;
-                continue;
-              }
-                if(state == 6){
-                  printf("%s\r\n",positionFixString);
-                  ssd1331_clear_screen(BLACK);
-                  ssd1331_display_string(0,10,positionFixString,FONT_1206,WHITE);
-                  state = 7;
-                  continue;
-                }
-                  if(state == 7){
-                    printf("%s\r\n",satellitesUsedString);
-                    ssd1331_clear_screen(BLACK);
-                    ssd1331_display_string(0,10,satellitesUsedString,FONT_1206,WHITE);
-                    state = 8;
-                    continue;
-                  }
-                    if(state == 8){
-                      printf("%s\r\n",horizontalDilutionOfPrecisionString);
-                      ssd1331_clear_screen(BLACK);
-                      ssd1331_display_string(0,10,horizontalDilutionOfPrecisionString,FONT_1206,WHITE);
-                      state = 9;
-                      continue;
-                    }
-                      if(state == 9){
-                        printf("%s\r\n",altitudeString);
-                        ssd1331_clear_screen(BLACK);
-                        ssd1331_display_string(0,0,altitudeString,FONT_1206,WHITE);
-                        state = 10;
-                        continue;
-                      }
-                        if(state == 10){
-                          printf("%s\r\n",altitudeUnitsString);
-                          ssd1331_clear_screen(BLACK);
-                          ssd1331_display_string(0,10,altitudeUnitsString,FONT_1206,WHITE);
-                          state = 11;
-                          continue;
-                        }
-                          if(state == 11){
-                            printf("%s\r\n",geoidSeperationString);
-                            ssd1331_clear_screen(BLACK);
-                            ssd1331_display_string(0,10,geoidSeperationString,FONT_1206,WHITE);
-                            state = 12;
-                            continue;
-                          }
-                            if(state == 12){
-                              printf("%s\r\n",inMetersString);
-                              ssd1331_clear_screen(BLACK);
-                              ssd1331_display_string(0,10,inMetersString,FONT_1206,WHITE);
-                              state = 13;
-                              continue;
-                            }
-                              if(state == 13){
-                                printf("%s\r\n",dgpsAgeString);
-                                ssd1331_clear_screen(BLACK);
-                                ssd1331_display_string(0,10,dgpsAgeString,FONT_1206,WHITE);
-                                state = 14;
-                                continue;
-                              }
-                                if(state == 14){
-                                  printf("%s\r\n",checkSumString);
-                                  ssd1331_clear_screen(BLACK);
-                                  ssd1331_display_string(0,10,checkSumString,FONT_1206,WHITE);
-                                  state = 15;
-                                  continue;
-                                }
-                                if(state == 15){
-                                  ssd1331_clear_screen(BLACK);
-                                  ssd1331_display_string(0,0,"Finished Program",FONT_1206,WHITE);
-                                  continueFlag = 0;
-                                  state = 0;
-                                  continue;
-                                }
+      if(state == 2){
+        printf("%s\r\n",latitudeString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,latitudeString,FONT_1206,WHITE);
+        state = 3;
+        continue;
+      }
+      if(state == 3){
+        printf("%s\r\n",latitudeMeasureString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,latitudeMeasureString,FONT_1206,WHITE);
+        state = 4;
+        continue;
+      }
+      if(state == 4){
+        printf("%s\r\n",longitudeString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,longitudeString,FONT_1206,WHITE);
+        state = 5;
+        continue;
+      }
+      if(state == 5){
+        printf("%s\r\n",longitudeMeasureString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,longitudeMeasureString,FONT_1206,WHITE);
+        state = 6;
+        continue;
+      }
+      if(state == 6){
+        printf("%s\r\n",positionFixString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,positionFixString,FONT_1206,WHITE);
+        state = 7;
+        continue;
+      }
+      if(state == 7){
+        printf("%s\r\n",satellitesUsedString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,satellitesUsedString,FONT_1206,WHITE);
+        state = 8;
+        continue;
+      }
+      if(state == 8){
+        printf("%s\r\n",horizontalDilutionOfPrecisionString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,horizontalDilutionOfPrecisionString,FONT_1206,WHITE);
+        state = 9;
+        continue;
+      }
+      if(state == 9){
+        printf("%s\r\n",altitudeString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,0,altitudeString,FONT_1206,WHITE);
+        state = 10;
+        continue;
+      }
+      if(state == 10){
+        printf("%s\r\n",altitudeUnitsString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,altitudeUnitsString,FONT_1206,WHITE);
+        state = 11;
+        continue;
+      }
+      if(state == 11){
+        printf("%s\r\n",geoidSeperationString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,geoidSeperationString,FONT_1206,WHITE);
+        state = 12;
+        continue;
+      }
+      if(state == 12){
+        printf("%s\r\n",inMetersString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,inMetersString,FONT_1206,WHITE);
+        state = 13;
+        continue;
+      }
+      if(state == 13){
+        printf("%s\r\n",dgpsAgeString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,dgpsAgeString,FONT_1206,WHITE);
+        state = 14;
+        continue;
+      }
+      if(state == 14){
+        printf("%s\r\n",checkSumString);
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,10,checkSumString,FONT_1206,WHITE);
+        state = 15;
+        continue;
+      }
+      if(state == 15){
+        ssd1331_clear_screen(BLACK);
+        ssd1331_display_string(0,0,"Finished Program",FONT_1206,WHITE);
+        continueFlag = 0;
+        state = 0;
+        continue;
+      }
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 void pushButtonInit(){
 	deBounceInit(pushPin, 'A', 1);
 }
+
 void displayWelcome(void) {
 	char stringBuffer[16] = { 0 };
 	ssd1331_clear_screen(BLACK);
@@ -572,11 +561,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	printf("Please Print the geo location of string");
-	HAL_Delay(100);
-	scanf("%s",string);
-	printf("The String is %s\r\n",string);
-	gpsParser(string,(uint8_t)strlen(string));
+	  printf("Please Print the geo location of string");
+	  HAL_Delay(100);
+	  scanf("%s",string);
+	  printf("The String is %s\r\n",string);
+	  gpsParser(string,(uint8_t)strlen(string));
   }
   if(testFlag == 1){
     unitTest();
